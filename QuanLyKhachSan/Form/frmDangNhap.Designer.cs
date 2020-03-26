@@ -29,13 +29,12 @@
         private void InitializeComponent()
         {
             this.txtTaiKhoan = new DevExpress.XtraEditors.TextEdit();
-            this.txtMatKhau = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.checkButton2 = new DevExpress.XtraEditors.CheckButton();
             this.checkButton1 = new DevExpress.XtraEditors.CheckButton();
+            this.txtMatKhau = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtTaiKhoan.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTaiKhoan
@@ -46,15 +45,6 @@
             this.txtTaiKhoan.Properties.Appearance.Options.UseFont = true;
             this.txtTaiKhoan.Size = new System.Drawing.Size(199, 30);
             this.txtTaiKhoan.TabIndex = 1;
-            // 
-            // txtMatKhau
-            // 
-            this.txtMatKhau.Location = new System.Drawing.Point(227, 159);
-            this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau.Properties.Appearance.Options.UseFont = true;
-            this.txtMatKhau.Size = new System.Drawing.Size(199, 30);
-            this.txtMatKhau.TabIndex = 2;
             // 
             // labelControl1
             // 
@@ -100,6 +90,16 @@
             this.checkButton1.Text = "ĐĂNG NHẬP";
             this.checkButton1.CheckedChanged += new System.EventHandler(this.checkButton1_CheckedChanged);
             // 
+            // txtMatKhau
+            // 
+            this.txtMatKhau.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatKhau.Location = new System.Drawing.Point(227, 156);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '*';
+            this.txtMatKhau.Size = new System.Drawing.Size(199, 30);
+            this.txtMatKhau.TabIndex = 6;
+            this.txtMatKhau.TextChanged += new System.EventHandler(this.txtMatKhau_TextChanged);
+            // 
             // frmDangNhap
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -107,16 +107,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(550, 328);
+            this.Controls.Add(this.txtMatKhau);
             this.Controls.Add(this.checkButton2);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl1);
-            this.Controls.Add(this.txtMatKhau);
             this.Controls.Add(this.txtTaiKhoan);
             this.Controls.Add(this.checkButton1);
             this.Name = "frmDangNhap";
             this.Text = "frmDangNhap";
             ((System.ComponentModel.ISupportInitialize)(this.txtTaiKhoan.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,9 +125,9 @@
 
         private DevExpress.XtraEditors.CheckButton checkButton1;
         private DevExpress.XtraEditors.TextEdit txtTaiKhoan;
-        private DevExpress.XtraEditors.TextEdit txtMatKhau;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.CheckButton checkButton2;
+        private System.Windows.Forms.TextBox txtMatKhau;
     }
 }

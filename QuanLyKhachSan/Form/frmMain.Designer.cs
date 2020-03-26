@@ -36,9 +36,9 @@
             this.NG = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.celeDichVu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.celePhong = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.celeKhachHang = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.celeThuePhong = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.celeKhachHang = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.clebDichVu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.celeThanhToan = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -88,14 +88,15 @@
             this.accordionControlElement1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.celeVatDung,
             this.NG,
+            this.clebDichVu,
             this.celeDichVu,
             this.celePhong,
-            this.celeKhachHang,
             this.celeThuePhong,
-            this.accordionControlElement6});
+            this.celeKhachHang});
             this.accordionControlElement1.Expanded = true;
             this.accordionControlElement1.Name = "accordionControlElement1";
             this.accordionControlElement1.Text = "QUẢN LÝ";
+            this.accordionControlElement1.Click += new System.EventHandler(this.accordionControlElement1_Click);
             // 
             // celeVatDung
             // 
@@ -150,19 +151,6 @@
             this.celePhong.Text = "PHÒNG";
             this.celePhong.Click += new System.EventHandler(this.celePhong_Click);
             // 
-            // celeKhachHang
-            // 
-            this.celeKhachHang.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Right)});
-            this.celeKhachHang.ImageOptions.Image = global::QuanLyKhachSan.Properties.Resources.icons8_customer_51;
-            this.celeKhachHang.Name = "celeKhachHang";
-            this.celeKhachHang.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.celeKhachHang.Text = "KHÁCH HÀNG";
-            this.celeKhachHang.Click += new System.EventHandler(this.celeKhachHang_Click);
-            // 
             // celeThuePhong
             // 
             this.celeThuePhong.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
@@ -176,17 +164,31 @@
             this.celeThuePhong.Text = "THUÊ PHÒNG";
             this.celeThuePhong.Click += new System.EventHandler(this.celeThuePhong_Click);
             // 
-            // accordionControlElement6
+            // celeKhachHang
             // 
-            this.accordionControlElement6.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
+            this.celeKhachHang.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Right)});
-            this.accordionControlElement6.ImageOptions.Image = global::QuanLyKhachSan.Properties.Resources.icons8_service_tips_16;
-            this.accordionControlElement6.Name = "accordionControlElement6";
-            this.accordionControlElement6.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement6.Text = "DỊCH VỤ";
+            this.celeKhachHang.ImageOptions.Image = global::QuanLyKhachSan.Properties.Resources.icons8_customer_51;
+            this.celeKhachHang.Name = "celeKhachHang";
+            this.celeKhachHang.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.celeKhachHang.Text = "KHÁCH HÀNG";
+            this.celeKhachHang.Click += new System.EventHandler(this.celeKhachHang_Click);
+            // 
+            // clebDichVu
+            // 
+            this.clebDichVu.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Right)});
+            this.clebDichVu.ImageOptions.Image = global::QuanLyKhachSan.Properties.Resources.icons8_service_tips_161;
+            this.clebDichVu.Name = "clebDichVu";
+            this.clebDichVu.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.clebDichVu.Text = "DỊCH VỤ";
+            this.clebDichVu.Click += new System.EventHandler(this.clebDichVu_Click);
             // 
             // accordionControlElement4
             // 
@@ -297,7 +299,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement NG;
         private DevExpress.XtraBars.Navigation.AccordionControlElement celeThuePhong;
         private System.Windows.Forms.Panel panel;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement6;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement clebDichVu;
     }
 }
 

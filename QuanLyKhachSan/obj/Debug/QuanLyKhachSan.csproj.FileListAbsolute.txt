@@ -456,3 +456,4 @@ C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj
 C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csproj.CopyComplete
 C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.exe
 C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb
+C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.UserControl.QuanLy.frmDichVu.resources

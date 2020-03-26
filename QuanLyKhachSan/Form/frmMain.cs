@@ -37,7 +37,7 @@ namespace QuanLyKhachSan
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-          
+
         }
 
         private void celeVatDung_Click(object sender, EventArgs e)
@@ -52,7 +52,7 @@ namespace QuanLyKhachSan
             panel.Controls.Clear();
             frmKhachHang kh = new frmKhachHang();
             panel.Controls.Add(kh);
-            
+
         }
 
         private void NG_Click(object sender, EventArgs e)
@@ -82,8 +82,8 @@ namespace QuanLyKhachSan
         {
 
             panel.Controls.Clear();
-            frmDichVu dv = new frmDichVu();
-            panel.Controls.Add(dv);
+            frmSuDungDichVu sddv = new frmSuDungDichVu();
+            panel.Controls.Add(sddv);
         }
 
         private void celeThanhToan_Click(object sender, EventArgs e)
@@ -108,6 +108,23 @@ namespace QuanLyKhachSan
             panel.Controls.Clear();
             frmHuongDan hd = new frmHuongDan();
             panel.Controls.Add(hd);
+        }
+
+        private void accordionControlElement1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void accordionControlElement6_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void clebDichVu_Click(object sender, EventArgs e)
+        {
+            panel.Controls.Clear();
+            frmDichVu dv = new frmDichVu();
+            panel.Controls.Add(dv);
         }
     }
 }
