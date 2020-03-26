@@ -114,6 +114,7 @@
             this.Controls.Add(this.txtTaiKhoan);
             this.Controls.Add(this.checkButton1);
             this.Name = "frmDangNhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmDangNhap";
             ((System.ComponentModel.ISupportInitialize)(this.txtTaiKhoan.Properties)).EndInit();
             this.ResumeLayout(false);
