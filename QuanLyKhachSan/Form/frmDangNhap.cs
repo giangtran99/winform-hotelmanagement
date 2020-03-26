@@ -18,6 +18,7 @@ namespace QuanLyKhachSan
         DataAccessContext db = new DataAccessContext();
         public frmDangNhap()
         {
+            
             InitializeComponent();
         }
 
@@ -44,6 +45,11 @@ namespace QuanLyKhachSan
             }
             else { XtraMessageBox.Show("Chưa nhập đủ thông tin hoặc tài khoản không tồn tại !"); }
             
+        }
+
+        private void txtMatKhau_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

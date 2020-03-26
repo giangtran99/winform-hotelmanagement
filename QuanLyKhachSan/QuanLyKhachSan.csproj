@@ -130,6 +130,12 @@
     <Compile Include="UserControl\QuanLy\frmDichVu.Designer.cs">
       <DependentUpon>frmDichVu.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\QuanLy\frmSuDungDichVu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\QuanLy\frmSuDungDichVu.Designer.cs">
+      <DependentUpon>frmSuDungDichVu.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\QuanLy\frmKhachHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -180,6 +186,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControl\QuanLy\frmDichVu.resx">
+      <DependentUpon>frmDichVu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\QuanLy\frmKhachHang.resx">
       <DependentUpon>frmKhachHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -238,6 +247,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-service-tips-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-service-tips-161.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

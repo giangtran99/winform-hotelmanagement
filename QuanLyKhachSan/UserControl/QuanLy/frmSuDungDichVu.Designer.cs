@@ -1,6 +1,6 @@
 ﻿namespace QuanLyKhachSan.UserControl.QuanLy
 {
-    partial class frmDichVu
+    partial class frmSuDungDichVu
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,16 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // frmDichVu
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "frmDichVu";
-            this.Size = new System.Drawing.Size(150, 182);
-            this.ResumeLayout(false);
-
         }
 
         #endregion
