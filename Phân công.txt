@@ -1,3 +1,4 @@
+Phần 1 
 Trường : Thêm,Sửa,Xóa,Tìm Kiếm Phòng
 Việt : Sửa,Xóa,Tìm Kiếm Khách hàng
 Tùng : Thêm, Sửa,Xóa Dịch vụ (Xóa trên DatagidView)
