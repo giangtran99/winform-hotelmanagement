@@ -1,0 +1,4 @@
+Trường : Thêm,Sửa,Xóa,Tìm Kiếm Phòng
+Việt : Sửa,Xóa,Tìm Kiếm Khách hàng
+Tùng : Thêm, Sửa,Xóa Dịch vụ (Xóa trên DatagidView)
+Tuấn Anh : Sửa,Tìm Kiếm( theo phòng và tên vật dụng) ,Thêm,Xóa Vật dụng
