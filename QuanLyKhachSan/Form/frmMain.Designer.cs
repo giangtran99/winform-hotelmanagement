@@ -29,21 +29,22 @@
         private void InitializeComponent()
         {
             this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
+            this.panel = new System.Windows.Forms.Panel();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.celeVatDung = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.NG = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.celeDichVu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.celePhong = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.celeKhachHang = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.celeThuePhong = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.celeKhachHang = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.clebDichVu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.celeThanhToan = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
-            this.panel = new System.Windows.Forms.Panel();
             this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
@@ -59,6 +60,13 @@
             this.fluentDesignFormContainer1.Size = new System.Drawing.Size(822, 511);
             this.fluentDesignFormContainer1.TabIndex = 0;
             this.fluentDesignFormContainer1.Click += new System.EventHandler(this.fluentDesignFormContainer1_Click);
+            // 
+            // panel
+            // 
+            this.panel.Location = new System.Drawing.Point(25, 24);
+            this.panel.Name = "panel";
+            this.panel.Size = new System.Drawing.Size(775, 458);
+            this.panel.TabIndex = 0;
             // 
             // accordionControl1
             // 
@@ -80,13 +88,15 @@
             this.accordionControlElement1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.celeVatDung,
             this.NG,
+            this.clebDichVu,
             this.celeDichVu,
             this.celePhong,
-            this.celeKhachHang,
-            this.celeThuePhong});
+            this.celeThuePhong,
+            this.celeKhachHang});
             this.accordionControlElement1.Expanded = true;
             this.accordionControlElement1.Name = "accordionControlElement1";
             this.accordionControlElement1.Text = "QUẢN LÝ";
+            this.accordionControlElement1.Click += new System.EventHandler(this.accordionControlElement1_Click);
             // 
             // celeVatDung
             // 
@@ -141,6 +151,19 @@
             this.celePhong.Text = "PHÒNG";
             this.celePhong.Click += new System.EventHandler(this.celePhong_Click);
             // 
+            // celeThuePhong
+            // 
+            this.celeThuePhong.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Right)});
+            this.celeThuePhong.ImageOptions.Image = global::QuanLyKhachSan.Properties.Resources.icons8_hotel_star_16;
+            this.celeThuePhong.Name = "celeThuePhong";
+            this.celeThuePhong.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.celeThuePhong.Text = "THUÊ PHÒNG";
+            this.celeThuePhong.Click += new System.EventHandler(this.celeThuePhong_Click);
+            // 
             // celeKhachHang
             // 
             this.celeKhachHang.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
@@ -154,18 +177,18 @@
             this.celeKhachHang.Text = "KHÁCH HÀNG";
             this.celeKhachHang.Click += new System.EventHandler(this.celeKhachHang_Click);
             // 
-            // celeThuePhong
+            // clebDichVu
             // 
-            this.celeThuePhong.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
+            this.clebDichVu.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Right)});
-            this.celeThuePhong.ImageOptions.Image = global::QuanLyKhachSan.Properties.Resources.icons8_hotel_star_16;
-            this.celeThuePhong.Name = "celeThuePhong";
-            this.celeThuePhong.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.celeThuePhong.Text = "THUÊ PHÒNG";
-            this.celeThuePhong.Click += new System.EventHandler(this.celeThuePhong_Click);
+            this.clebDichVu.ImageOptions.Image = global::QuanLyKhachSan.Properties.Resources.icons8_service_tips_161;
+            this.clebDichVu.Name = "clebDichVu";
+            this.clebDichVu.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.clebDichVu.Text = "DỊCH VỤ";
+            this.clebDichVu.Click += new System.EventHandler(this.clebDichVu_Click);
             // 
             // accordionControlElement4
             // 
@@ -235,13 +258,6 @@
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             // 
-            // panel
-            // 
-            this.panel.Location = new System.Drawing.Point(25, 24);
-            this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(775, 458);
-            this.panel.TabIndex = 0;
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -283,6 +299,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement NG;
         private DevExpress.XtraBars.Navigation.AccordionControlElement celeThuePhong;
         private System.Windows.Forms.Panel panel;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement clebDichVu;
     }
 }
 

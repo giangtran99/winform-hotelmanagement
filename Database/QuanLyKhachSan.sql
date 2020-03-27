@@ -61,7 +61,8 @@ GO
 CREATE TABLE SuDungDichVu(
    MaDichVu INT NOT NULL,
    MaHoaDon INT NOT NULL,
-   MaKH INT NOT NULL
+   MaKH INT NOT NULL,
+   NgayDungDichVu DATE
   )
 GO
 
@@ -72,6 +73,7 @@ CREATE TABLE HOADON(
  SoLuong INT,
  NgayLapHoaDon DATE ,
  ThanhTien INT,
+ TinhTrangThanhToan bit,
  GhiChu NVARCHAR(100)
  )
  GO
