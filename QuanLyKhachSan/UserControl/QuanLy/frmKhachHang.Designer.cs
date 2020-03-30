@@ -61,7 +61,7 @@
             this.xtraTabPage1.Controls.Add(this.txbTimKiem);
             this.xtraTabPage1.Name = "xtraTabPage1";
             this.xtraTabPage1.Size = new System.Drawing.Size(176, 494);
-            this.xtraTabPage1.Text = "Tìm Kiếm NV";
+            this.xtraTabPage1.Text = "Tìm Kiếm KH";
             this.xtraTabPage1.Paint += new System.Windows.Forms.PaintEventHandler(this.XtraTabPage1_Paint);
             // 
             // label1
@@ -96,7 +96,7 @@
             // 
             this.xtraTabPage2.Name = "xtraTabPage2";
             this.xtraTabPage2.Size = new System.Drawing.Size(176, 494);
-            this.xtraTabPage2.Text = "Sửa, Xóa NV";
+            this.xtraTabPage2.Text = "Sửa,Xóa KH";
             this.xtraTabPage2.Paint += new System.Windows.Forms.PaintEventHandler(this.XtraTabPage2_Paint_1);
             // 
             // dataGridView1

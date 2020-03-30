@@ -24,11 +24,6 @@ namespace QuanLyKhachSan.UserControl
         {
 
         }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-           
-        }
         SqlCommandBuilder sqlCommand = null;
 
         SqlDataAdapter sqlAdapter = null;
@@ -38,18 +33,18 @@ namespace QuanLyKhachSan.UserControl
         {
             try
             {
-                sqlAdapter = new SqlDataAdapter("SELECT MaNV 'Mã nhân viên', HoTen 'Họ và tên', NgaySinh 'Ngày sinh', GioiTinh 'Giới tính', SDT 'Số điện thoại' , 'Delete' AS [Thao tác] FROM NHANVIEN", DataAccessContext.connection);
+                sqlAdapter = new SqlDataAdapter("SELECT MaKH 'Mã khách hàng', TenKH 'Họ và tên', SDT 'Số điện thoại' , 'Delete' AS [Thao tác] FROM KHACHHANG", DataAccessContext.connection);
                 sqlCommand = new SqlCommandBuilder(sqlAdapter);
                 sqlAdapter.UpdateCommand = sqlCommand.GetUpdateCommand();
                 sqlAdapter.DeleteCommand = sqlCommand.GetDeleteCommand();
                 dataset = new DataSet();
-                sqlAdapter.Fill(dataset, "NHANVIEN");
+                sqlAdapter.Fill(dataset, "KHACHHANG");
                 dGVTimKiem.DataSource = null;
-                dGVTimKiem.DataSource = dataset.Tables["NHANVIEN"];
+                dGVTimKiem.DataSource = dataset.Tables["KHACHHANG"];
                 for (int i = 0; i < dGVTimKiem.Rows.Count; i++)
                 {
                     DataGridViewLinkCell linkCell = new DataGridViewLinkCell();
-                    dGVTimKiem[5, i] = linkCell;
+                    dGVTimKiem[3, i] = linkCell;
                 }
             }
             catch (Exception ex)
@@ -61,31 +56,29 @@ namespace QuanLyKhachSan.UserControl
         {
             try
             {
-                if (e.ColumnIndex == 5)
+                if (e.ColumnIndex == 3)
                 {
-                    string Task = dGVTimKiem.Rows[e.RowIndex].Cells[5].Value.ToString();
+                    string Task = dGVTimKiem.Rows[e.RowIndex].Cells[3].Value.ToString();
                     if (Task == "Delete")
                     {
                         if (MessageBox.Show("Bạn có chắc chắm muốn xóa không?", "Đang xóa...", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                         {
                             int rowIndex = e.RowIndex;
                             dGVTimKiem.Rows.RemoveAt(rowIndex);
-                            dataset.Tables["NHANVIEN"].Rows[rowIndex].Delete();
-                            sqlAdapter.Update(dataset, "NHANVIEN");
+                            dataset.Tables["KHACHHANG"].Rows[rowIndex].Delete();
+                            sqlAdapter.Update(dataset, "KHACHHANG");
                         }
                     }
                     else
                     {
                         int r = e.RowIndex;
                         DataAccessContext dt = new DataAccessContext();
-                        SqlCommand cmd = new SqlCommand("Update NHANVIEN SET HoTen = @HoTen, NgaySinh = @NgaySinh, GioiTinh = @GioiTinh, SDT = @SDT WHERE MaNV = @MaNV");
-                        cmd.Parameters.Add("@MaNV", dGVTimKiem.Rows[r].Cells["Mã nhân viên"].Value);
-                        cmd.Parameters.Add("@HoTen", dGVTimKiem.Rows[r].Cells["Họ và tên"].Value);
-                        cmd.Parameters.Add("@NgaySinh", dGVTimKiem.Rows[r].Cells["Ngày sinh"].Value);
-                        cmd.Parameters.Add("@GioiTinh", dGVTimKiem.Rows[r].Cells["Giới tính"].Value);
+                        SqlCommand cmd = new SqlCommand("Update KHACHHANG SET TenKH = @TenKH, SDT = @SDT WHERE MaKH = @MaKH");
+                        cmd.Parameters.Add("@MaKH", dGVTimKiem.Rows[r].Cells["Mã khách hàng"].Value);
+                        cmd.Parameters.Add("@TenKH", dGVTimKiem.Rows[r].Cells["Họ và tên"].Value);
                         cmd.Parameters.Add("@SDT", dGVTimKiem.Rows[r].Cells["Số điện thoại"].Value);
                         dt.executeSelectQuery(cmd);
-                        dGVTimKiem.Rows[e.RowIndex].Cells[5].Value = "Delete";
+                        dGVTimKiem.Rows[e.RowIndex].Cells[3].Value = "Delete";
                         MessageBox.Show("Đã cập nhật thành công!");
                     }
                 }
@@ -102,17 +95,13 @@ namespace QuanLyKhachSan.UserControl
                 int lastRow = e.RowIndex;
                 DataGridViewRow nRow = dGVTimKiem.Rows[lastRow];
                 DataGridViewLinkCell linkCell = new DataGridViewLinkCell();
-                dGVTimKiem[5, lastRow] = linkCell;
+                dGVTimKiem[3, lastRow] = linkCell;
                 nRow.Cells["Thao tác"].Value = "Update";
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-        }
-        private void XtraTabPage2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void Button1_Click_1(object sender, EventArgs e)
@@ -121,7 +110,7 @@ namespace QuanLyKhachSan.UserControl
             DataAccessContext oop = new DataAccessContext();
             DataTable dataTable = new DataTable();
 
-            oop.readDatathroughAdapter("SELECT MaNV 'Mã nhân viên', HoTen 'Họ và tên', NgaySinh 'Ngày sinh', GioiTinh 'Giới tính', SDT 'Số điện thoại' FROM NHANVIEN WHERE HoTen like N'%" + search + "%' or GioiTinh like N'%" + search + "%' or SDT like '%" + search + "%'", dataTable);
+            oop.readDatathroughAdapter("SELECT MaKH 'Mã khách hàng', TenKH 'Họ và tên', SDT 'Số điện thoại' FROM KHACHHANG WHERE TenKH like N'%" + search + "%'  or SDT like '%" + search + "%' or MaKH like '%" + search + "%'", dataTable);
             dGVTimKiem.DataSource = dataTable;
         }
 
@@ -139,7 +128,7 @@ namespace QuanLyKhachSan.UserControl
             DataAccessContext oop = new DataAccessContext();
             DataTable dataTable = new DataTable();
 
-            oop.readDatathroughAdapter("SELECT MaNV 'Mã nhân viên', HoTen 'Họ và tên', NgaySinh 'Ngày sinh', GioiTinh 'Giới tính', SDT 'Số điện thoại' FROM NHANVIEN", dataTable);
+            oop.readDatathroughAdapter("SELECT MaKH 'Mã khách hàng', TenKH 'Họ và tên',  SDT 'Số điện thoại' FROM KHACHHANG", dataTable);
             dGVTimKiem.DataSource = dataTable;
         }
     }
