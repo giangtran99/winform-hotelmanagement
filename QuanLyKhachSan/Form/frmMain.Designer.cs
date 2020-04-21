@@ -34,11 +34,11 @@
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.celeVatDung = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.NG = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.clebDichVu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.celeDichVu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.celePhong = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.celeThuePhong = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.celeKhachHang = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.clebDichVu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.celeThanhToan = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -57,7 +57,7 @@
             this.fluentDesignFormContainer1.Location = new System.Drawing.Point(194, 27);
             this.fluentDesignFormContainer1.Margin = new System.Windows.Forms.Padding(2);
             this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
-            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(822, 511);
+            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(895, 549);
             this.fluentDesignFormContainer1.TabIndex = 0;
             this.fluentDesignFormContainer1.Click += new System.EventHandler(this.fluentDesignFormContainer1_Click);
             // 
@@ -65,7 +65,7 @@
             // 
             this.panel.Location = new System.Drawing.Point(25, 24);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(775, 458);
+            this.panel.Size = new System.Drawing.Size(858, 554);
             this.panel.TabIndex = 0;
             // 
             // accordionControl1
@@ -79,7 +79,7 @@
             this.accordionControl1.Margin = new System.Windows.Forms.Padding(2);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(194, 511);
+            this.accordionControl1.Size = new System.Drawing.Size(194, 549);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -124,6 +124,19 @@
             this.NG.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.NG.Text = "NGƯỜI DÙNG";
             this.NG.Click += new System.EventHandler(this.NG_Click);
+            // 
+            // clebDichVu
+            // 
+            this.clebDichVu.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Right)});
+            this.clebDichVu.ImageOptions.Image = global::QuanLyKhachSan.Properties.Resources.icons8_service_tips_161;
+            this.clebDichVu.Name = "clebDichVu";
+            this.clebDichVu.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.clebDichVu.Text = "DỊCH VỤ";
+            this.clebDichVu.Click += new System.EventHandler(this.clebDichVu_Click);
             // 
             // celeDichVu
             // 
@@ -176,19 +189,6 @@
             this.celeKhachHang.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.celeKhachHang.Text = "KHÁCH HÀNG";
             this.celeKhachHang.Click += new System.EventHandler(this.celeKhachHang_Click);
-            // 
-            // clebDichVu
-            // 
-            this.clebDichVu.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Right)});
-            this.clebDichVu.ImageOptions.Image = global::QuanLyKhachSan.Properties.Resources.icons8_service_tips_161;
-            this.clebDichVu.Name = "clebDichVu";
-            this.clebDichVu.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.clebDichVu.Text = "DỊCH VỤ";
-            this.clebDichVu.Click += new System.EventHandler(this.clebDichVu_Click);
             // 
             // accordionControlElement4
             // 
@@ -254,7 +254,7 @@
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(2);
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1016, 27);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1089, 27);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             // 
@@ -262,7 +262,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1016, 538);
+            this.ClientSize = new System.Drawing.Size(1089, 576);
             this.ControlContainer = this.fluentDesignFormContainer1;
             this.Controls.Add(this.fluentDesignFormContainer1);
             this.Controls.Add(this.accordionControl1);

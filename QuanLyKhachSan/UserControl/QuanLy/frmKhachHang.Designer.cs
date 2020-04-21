@@ -112,7 +112,7 @@
             this.dGVTimKiem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dGVTimKiem.Location = new System.Drawing.Point(193, 12);
             this.dGVTimKiem.Name = "dGVTimKiem";
-            this.dGVTimKiem.Size = new System.Drawing.Size(652, 506);
+            this.dGVTimKiem.Size = new System.Drawing.Size(689, 506);
             this.dGVTimKiem.TabIndex = 1;
             this.dGVTimKiem.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGVTimKiem_CellContentClick);
             this.dGVTimKiem.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGVTimKiem_CellContentDoubleClick);
@@ -124,7 +124,7 @@
             this.Controls.Add(this.dGVTimKiem);
             this.Controls.Add(this.xtraTabControl1);
             this.Name = "frmKhachHang";
-            this.Size = new System.Drawing.Size(856, 528);
+            this.Size = new System.Drawing.Size(906, 528);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);

@@ -31,7 +31,6 @@ namespace QuanLyKhachSan.UserControl.QuanLy
             //Lấy danh sách thông tin dịch vụ vào bảng bên cạnh
             SqlDataAdapter da = new SqlDataAdapter("select top 1000 MaDichVu, TENDV, GiaDichVu from DICHVU", DataAccessContext.connection);
             DataTable dt = new DataTable();
-
             da.Fill(dt);
             dataGridViewService.DataSource = dt;
         }
