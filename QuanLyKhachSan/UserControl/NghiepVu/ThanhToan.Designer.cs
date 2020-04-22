@@ -28,46 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtSDT = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.txbSDT = new DevExpress.XtraEditors.TextEdit();
+            this.txbTen = new DevExpress.XtraEditors.TextEdit();
             this.btnTim = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.lblKH = new DevExpress.XtraEditors.LabelControl();
             this.SĐT = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txbSĐT = new DevExpress.XtraEditors.TextEdit();
+            this.dGVThuePhong = new System.Windows.Forms.DataGridView();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.txbTongTien = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dGVSuDungDV = new System.Windows.Forms.DataGridView();
+            this.dGVDenBu = new System.Windows.Forms.DataGridView();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSDT.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.btnThanhToan = new DevExpress.XtraEditors.SimpleButton();
+            ((System.ComponentModel.ISupportInitialize)(this.txbSDT.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txbTen.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txbSĐT.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dGVThuePhong)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txbTongTien.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dGVSuDungDV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dGVDenBu)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtSDT
+            // txbSDT
             // 
-            this.txtSDT.Location = new System.Drawing.Point(129, 18);
-            this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(149, 20);
-            this.txtSDT.TabIndex = 0;
+            this.txbSDT.Location = new System.Drawing.Point(129, 18);
+            this.txbSDT.Name = "txbSDT";
+            this.txbSDT.Size = new System.Drawing.Size(149, 20);
+            this.txbSDT.TabIndex = 0;
             // 
-            // textEdit2
+            // txbTen
             // 
-            this.textEdit2.Location = new System.Drawing.Point(129, 63);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(149, 20);
-            this.textEdit2.TabIndex = 1;
+            this.txbTen.Location = new System.Drawing.Point(129, 63);
+            this.txbTen.Name = "txbTen";
+            this.txbTen.Size = new System.Drawing.Size(149, 20);
+            this.txbTen.TabIndex = 1;
             // 
             // btnTim
             // 
@@ -76,6 +76,7 @@
             this.btnTim.Size = new System.Drawing.Size(75, 23);
             this.btnTim.TabIndex = 2;
             this.btnTim.Text = "Tìm";
+            this.btnTim.Click += new System.EventHandler(this.BtnTim_Click);
             // 
             // labelControl1
             // 
@@ -101,20 +102,20 @@
             this.SĐT.TabIndex = 9;
             this.SĐT.Text = "SĐT";
             // 
-            // textEdit4
+            // txbSĐT
             // 
-            this.textEdit4.Location = new System.Drawing.Point(381, 63);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Size = new System.Drawing.Size(164, 20);
-            this.textEdit4.TabIndex = 8;
+            this.txbSĐT.Location = new System.Drawing.Point(381, 63);
+            this.txbSĐT.Name = "txbSĐT";
+            this.txbSĐT.Size = new System.Drawing.Size(164, 20);
+            this.txbSĐT.TabIndex = 8;
             // 
-            // dataGridView1
+            // dGVThuePhong
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(49, 185);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(215, 241);
-            this.dataGridView1.TabIndex = 12;
+            this.dGVThuePhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dGVThuePhong.Location = new System.Drawing.Point(49, 185);
+            this.dGVThuePhong.Name = "dGVThuePhong";
+            this.dGVThuePhong.Size = new System.Drawing.Size(215, 241);
+            this.dGVThuePhong.TabIndex = 12;
             // 
             // labelControl3
             // 
@@ -137,14 +138,14 @@
             this.labelControl2.TabIndex = 17;
             this.labelControl2.Text = "Tổng Tiền";
             // 
-            // textEdit1
+            // txbTongTien
             // 
-            this.textEdit1.Location = new System.Drawing.Point(194, 473);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Size = new System.Drawing.Size(113, 32);
-            this.textEdit1.TabIndex = 18;
+            this.txbTongTien.Location = new System.Drawing.Point(194, 473);
+            this.txbTongTien.Name = "txbTongTien";
+            this.txbTongTien.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbTongTien.Properties.Appearance.Options.UseFont = true;
+            this.txbTongTien.Size = new System.Drawing.Size(113, 32);
+            this.txbTongTien.TabIndex = 18;
             // 
             // labelControl4
             // 
@@ -156,21 +157,21 @@
             this.labelControl4.TabIndex = 19;
             this.labelControl4.Text = "VNĐ";
             // 
-            // dataGridView2
+            // dGVSuDungDV
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(309, 185);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(236, 241);
-            this.dataGridView2.TabIndex = 20;
+            this.dGVSuDungDV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dGVSuDungDV.Location = new System.Drawing.Point(309, 185);
+            this.dGVSuDungDV.Name = "dGVSuDungDV";
+            this.dGVSuDungDV.Size = new System.Drawing.Size(236, 241);
+            this.dGVSuDungDV.TabIndex = 20;
             // 
-            // dataGridView3
+            // dGVDenBu
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(591, 185);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(219, 241);
-            this.dataGridView3.TabIndex = 21;
+            this.dGVDenBu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dGVDenBu.Location = new System.Drawing.Point(591, 185);
+            this.dGVDenBu.Name = "dGVDenBu";
+            this.dGVDenBu.Size = new System.Drawing.Size(219, 241);
+            this.dGVDenBu.TabIndex = 21;
             // 
             // labelControl5
             // 
@@ -196,45 +197,46 @@
             this.labelControl7.TabIndex = 24;
             this.labelControl7.Text = "Đền bù Vật dụng";
             // 
-            // simpleButton1
+            // btnThanhToan
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(641, 459);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(113, 68);
-            this.simpleButton1.TabIndex = 25;
-            this.simpleButton1.Text = "THANH TOÁN";
+            this.btnThanhToan.Location = new System.Drawing.Point(641, 459);
+            this.btnThanhToan.Name = "btnThanhToan";
+            this.btnThanhToan.Size = new System.Drawing.Size(113, 68);
+            this.btnThanhToan.TabIndex = 25;
+            this.btnThanhToan.Text = "THANH TOÁN";
+            this.btnThanhToan.Click += new System.EventHandler(this.BtnThanhToan_Click);
             // 
             // ThanhToan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.simpleButton1);
+            this.Controls.Add(this.btnThanhToan);
             this.Controls.Add(this.labelControl7);
             this.Controls.Add(this.labelControl6);
             this.Controls.Add(this.labelControl5);
-            this.Controls.Add(this.dataGridView3);
-            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.dGVDenBu);
+            this.Controls.Add(this.dGVSuDungDV);
             this.Controls.Add(this.labelControl4);
-            this.Controls.Add(this.textEdit1);
+            this.Controls.Add(this.txbTongTien);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl3);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dGVThuePhong);
             this.Controls.Add(this.SĐT);
-            this.Controls.Add(this.textEdit4);
+            this.Controls.Add(this.txbSĐT);
             this.Controls.Add(this.lblKH);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.btnTim);
-            this.Controls.Add(this.textEdit2);
-            this.Controls.Add(this.txtSDT);
+            this.Controls.Add(this.txbTen);
+            this.Controls.Add(this.txbSDT);
             this.Name = "ThanhToan";
             this.Size = new System.Drawing.Size(910, 575);
-            ((System.ComponentModel.ISupportInitialize)(this.txtSDT.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txbSDT.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txbTen.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txbSĐT.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dGVThuePhong)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txbTongTien.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dGVSuDungDV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dGVDenBu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,23 +244,23 @@
 
         #endregion
 
-        private DevExpress.XtraEditors.TextEdit txtSDT;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit txbSDT;
+        private DevExpress.XtraEditors.TextEdit txbTen;
         private DevExpress.XtraEditors.SimpleButton btnTim;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl lblKH;
         private DevExpress.XtraEditors.LabelControl SĐT;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private DevExpress.XtraEditors.TextEdit txbSĐT;
+        private System.Windows.Forms.DataGridView dGVThuePhong;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit txbTongTien;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dGVSuDungDV;
+        private System.Windows.Forms.DataGridView dGVDenBu;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.LabelControl labelControl7;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btnThanhToan;
     }
 }
