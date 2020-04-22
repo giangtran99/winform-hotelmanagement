@@ -229,7 +229,7 @@
             this.Controls.Add(this.txbTen);
             this.Controls.Add(this.txbSDT);
             this.Name = "ThanhToan";
-            this.Size = new System.Drawing.Size(910, 575);
+            this.Size = new System.Drawing.Size(868, 584);
             ((System.ComponentModel.ISupportInitialize)(this.txbSDT.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txbTen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txbSĐT.Properties)).EndInit();
