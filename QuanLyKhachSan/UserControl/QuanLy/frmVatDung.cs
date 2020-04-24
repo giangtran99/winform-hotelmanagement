@@ -157,5 +157,15 @@ namespace QuanLyKhachSan.UserControl
                 XtraMessageBox.Show("Đã có lỗi xảy ra. Vui lòng thử lại !", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

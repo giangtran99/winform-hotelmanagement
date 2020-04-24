@@ -102,11 +102,11 @@
             // 
             // frmDangNhap
             // 
-            this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Appearance.BackColor = System.Drawing.Color.LavenderBlush;
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(550, 328);
+            this.ClientSize = new System.Drawing.Size(592, 350);
             this.Controls.Add(this.txtMatKhau);
             this.Controls.Add(this.checkButton2);
             this.Controls.Add(this.labelControl2);

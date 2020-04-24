@@ -17,5 +17,10 @@ namespace QuanLyKhachSan.UserControl.QuanLy
         {
             InitializeComponent();
         }
+
+        private void simpleButton5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

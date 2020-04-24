@@ -57,60 +57,69 @@
             // 
             // txbSDT
             // 
-            this.txbSDT.Location = new System.Drawing.Point(129, 18);
+            this.txbSDT.Location = new System.Drawing.Point(141, 18);
             this.txbSDT.Name = "txbSDT";
-            this.txbSDT.Size = new System.Drawing.Size(149, 20);
+            this.txbSDT.Size = new System.Drawing.Size(123, 20);
             this.txbSDT.TabIndex = 0;
             // 
             // txbTen
             // 
-            this.txbTen.Location = new System.Drawing.Point(129, 63);
+            this.txbTen.Location = new System.Drawing.Point(591, 18);
             this.txbTen.Name = "txbTen";
             this.txbTen.Size = new System.Drawing.Size(149, 20);
             this.txbTen.TabIndex = 1;
             // 
             // btnTim
             // 
-            this.btnTim.Location = new System.Drawing.Point(297, 15);
+            this.btnTim.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnTim.Appearance.Options.UseBackColor = true;
+            this.btnTim.Location = new System.Drawing.Point(297, 13);
             this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(75, 23);
+            this.btnTim.Size = new System.Drawing.Size(60, 29);
             this.btnTim.TabIndex = 2;
             this.btnTim.Text = "Tìm";
             this.btnTim.Click += new System.EventHandler(this.BtnTim_Click);
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(18, 20);
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Location = new System.Drawing.Point(18, 19);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(80, 13);
+            this.labelControl1.Size = new System.Drawing.Size(105, 16);
             this.labelControl1.TabIndex = 4;
             this.labelControl1.Text = "SĐT Khách Hàng";
             // 
             // lblKH
             // 
-            this.lblKH.Location = new System.Drawing.Point(20, 66);
+            this.lblKH.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKH.Appearance.Options.UseFont = true;
+            this.lblKH.Location = new System.Drawing.Point(482, 21);
             this.lblKH.Name = "lblKH";
-            this.lblKH.Size = new System.Drawing.Size(78, 13);
+            this.lblKH.Size = new System.Drawing.Size(92, 13);
             this.lblKH.TabIndex = 5;
             this.lblKH.Text = "Tên Khách Hàng";
             // 
             // SĐT
             // 
-            this.SĐT.Location = new System.Drawing.Point(321, 66);
+            this.SĐT.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SĐT.Appearance.Options.UseFont = true;
+            this.SĐT.Location = new System.Drawing.Point(548, 55);
             this.SĐT.Name = "SĐT";
-            this.SĐT.Size = new System.Drawing.Size(20, 13);
+            this.SĐT.Size = new System.Drawing.Size(26, 13);
             this.SĐT.TabIndex = 9;
             this.SĐT.Text = "SĐT";
             // 
             // txbSĐT
             // 
-            this.txbSĐT.Location = new System.Drawing.Point(381, 63);
+            this.txbSĐT.Location = new System.Drawing.Point(591, 52);
             this.txbSĐT.Name = "txbSĐT";
-            this.txbSĐT.Size = new System.Drawing.Size(164, 20);
+            this.txbSĐT.Size = new System.Drawing.Size(149, 20);
             this.txbSĐT.TabIndex = 8;
             // 
             // dGVThuePhong
             // 
+            this.dGVThuePhong.BackgroundColor = System.Drawing.SystemColors.Info;
             this.dGVThuePhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dGVThuePhong.Location = new System.Drawing.Point(49, 185);
             this.dGVThuePhong.Name = "dGVThuePhong";
@@ -119,12 +128,15 @@
             // 
             // labelControl3
             // 
+            this.labelControl3.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            this.labelControl3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.Options.UseBackColor = true;
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Vertical;
-            this.labelControl3.Location = new System.Drawing.Point(297, 108);
+            this.labelControl3.Location = new System.Drawing.Point(309, 101);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(229, 25);
+            this.labelControl3.Size = new System.Drawing.Size(193, 25);
             this.labelControl3.TabIndex = 16;
             this.labelControl3.Text = "CHI TIẾT HÓA ĐƠN";
             // 
@@ -159,6 +171,7 @@
             // 
             // dGVSuDungDV
             // 
+            this.dGVSuDungDV.BackgroundColor = System.Drawing.SystemColors.Info;
             this.dGVSuDungDV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dGVSuDungDV.Location = new System.Drawing.Point(309, 185);
             this.dGVSuDungDV.Name = "dGVSuDungDV";
@@ -167,6 +180,7 @@
             // 
             // dGVDenBu
             // 
+            this.dGVDenBu.BackgroundColor = System.Drawing.SystemColors.Info;
             this.dGVDenBu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dGVDenBu.Location = new System.Drawing.Point(591, 185);
             this.dGVDenBu.Name = "dGVDenBu";
@@ -175,39 +189,53 @@
             // 
             // labelControl5
             // 
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Bernard MT Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.Location = new System.Drawing.Point(110, 154);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(57, 13);
+            this.labelControl5.Size = new System.Drawing.Size(58, 16);
             this.labelControl5.TabIndex = 22;
             this.labelControl5.Text = "Thuê Phòng";
             // 
             // labelControl6
             // 
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Bernard MT Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl6.Appearance.Options.UseFont = true;
             this.labelControl6.Location = new System.Drawing.Point(370, 154);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(79, 13);
+            this.labelControl6.Size = new System.Drawing.Size(81, 16);
             this.labelControl6.TabIndex = 23;
             this.labelControl6.Text = "Sử Dụng Dich Vụ";
             // 
             // labelControl7
             // 
+            this.labelControl7.Appearance.Font = new System.Drawing.Font("Bernard MT Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl7.Appearance.Options.UseFont = true;
             this.labelControl7.Location = new System.Drawing.Point(652, 154);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(81, 13);
+            this.labelControl7.Size = new System.Drawing.Size(87, 16);
             this.labelControl7.TabIndex = 24;
             this.labelControl7.Text = "Đền bù Vật dụng";
             // 
             // btnThanhToan
             // 
-            this.btnThanhToan.Location = new System.Drawing.Point(641, 459);
+            this.btnThanhToan.Appearance.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnThanhToan.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThanhToan.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.btnThanhToan.Appearance.Options.UseBackColor = true;
+            this.btnThanhToan.Appearance.Options.UseFont = true;
+            this.btnThanhToan.Appearance.Options.UseForeColor = true;
+            this.btnThanhToan.Location = new System.Drawing.Point(641, 476);
             this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Size = new System.Drawing.Size(113, 68);
+            this.btnThanhToan.Size = new System.Drawing.Size(125, 51);
             this.btnThanhToan.TabIndex = 25;
             this.btnThanhToan.Text = "THANH TOÁN";
             this.btnThanhToan.Click += new System.EventHandler(this.BtnThanhToan_Click);
             // 
             // ThanhToan
             // 
+            this.Appearance.BackColor = System.Drawing.Color.LavenderBlush;
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnThanhToan);
@@ -229,7 +257,7 @@
             this.Controls.Add(this.txbTen);
             this.Controls.Add(this.txbSDT);
             this.Name = "ThanhToan";
-            this.Size = new System.Drawing.Size(868, 584);
+            this.Size = new System.Drawing.Size(868, 556);
             ((System.ComponentModel.ISupportInitialize)(this.txbSDT.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txbTen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txbSĐT.Properties)).EndInit();

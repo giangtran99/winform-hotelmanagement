@@ -927,3 +927,15 @@ C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj
 C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.UserControl.NghiepVu.ThanhToan.resources
 C:\Users\vietm\Desktop\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.UserControl.DatPhong.resources
 C:\Users\vietm\Desktop\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.UserControl.NghiepVu.ThanhToan.resources
+C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.UserControl.QuanLy.frmPhong.resources
+C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.UserControl.frmThuePhong.resources
+C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.UserControl.frmNguoiDung.resources
+C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\DevExpress.Pdf.v19.1.Drawing.dll
+C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\DevExpress.XtraPdfViewer.v19.1.dll
+C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\DevExpress.Pdf.v19.1.Drawing.xml
+C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\DevExpress.XtraPdfViewer.v19.1.xml
+C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\de\DevExpress.XtraPdfViewer.v19.1.resources.dll
+C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\es\DevExpress.XtraPdfViewer.v19.1.resources.dll
+C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\ja\DevExpress.XtraPdfViewer.v19.1.resources.dll
+C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\ru\DevExpress.XtraPdfViewer.v19.1.resources.dll
+C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.UserControl.QuanLy.frmSuDungDichVu.resources
