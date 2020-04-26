@@ -939,3 +939,17 @@ C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\bin
 C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\ja\DevExpress.XtraPdfViewer.v19.1.resources.dll
 C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\ru\DevExpress.XtraPdfViewer.v19.1.resources.dll
 C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.UserControl.QuanLy.frmSuDungDichVu.resources
+F:\GitProject\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\DevExpress.Pdf.v19.1.Drawing.dll
+F:\GitProject\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\DevExpress.XtraPdfViewer.v19.1.dll
+F:\GitProject\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\DevExpress.Pdf.v19.1.Drawing.xml
+F:\GitProject\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\DevExpress.XtraPdfViewer.v19.1.xml
+F:\GitProject\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\de\DevExpress.XtraPdfViewer.v19.1.resources.dll
+F:\GitProject\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\es\DevExpress.XtraPdfViewer.v19.1.resources.dll
+F:\GitProject\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\ja\DevExpress.XtraPdfViewer.v19.1.resources.dll
+F:\GitProject\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\ru\DevExpress.XtraPdfViewer.v19.1.resources.dll
+F:\GitProject\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.UserControl.DatPhong.resources
+F:\GitProject\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.UserControl.NghiepVu.ThanhToan.resources
+F:\GitProject\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.UserControl.frmNguoiDung.resources
+F:\GitProject\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.UserControl.QuanLy.frmPhong.resources
+F:\GitProject\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.UserControl.QuanLy.frmSuDungDichVu.resources
+F:\GitProject\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.UserControl.frmThuePhong.resources
