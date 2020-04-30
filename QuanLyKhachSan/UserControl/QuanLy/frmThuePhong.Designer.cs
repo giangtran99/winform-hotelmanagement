@@ -72,7 +72,7 @@
             this.dgvThuePhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvThuePhong.Location = new System.Drawing.Point(419, 99);
             this.dgvThuePhong.Name = "dgvThuePhong";
-            this.dgvThuePhong.Size = new System.Drawing.Size(569, 385);
+            this.dgvThuePhong.Size = new System.Drawing.Size(569, 408);
             this.dgvThuePhong.TabIndex = 0;
             // 
             // labelControl1
@@ -91,7 +91,7 @@
             // 
             this.btnTimKiem.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnTimKiem.Appearance.Options.UseBackColor = true;
-            this.btnTimKiem.Location = new System.Drawing.Point(53, 271);
+            this.btnTimKiem.Location = new System.Drawing.Point(53, 301);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(75, 38);
             this.btnTimKiem.TabIndex = 2;
@@ -166,7 +166,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Thistle;
+            this.groupBox1.BackColor = System.Drawing.Color.GhostWhite;
             this.groupBox1.Controls.Add(this.labelControl3);
             this.groupBox1.Controls.Add(this.labelControl7);
             this.groupBox1.Controls.Add(this.txtTenKH);
@@ -174,9 +174,9 @@
             this.groupBox1.Controls.Add(this.labelControl4);
             this.groupBox1.Controls.Add(this.txtSDT);
             this.groupBox1.Controls.Add(this.btnTimKiem);
-            this.groupBox1.Location = new System.Drawing.Point(205, 131);
+            this.groupBox1.Location = new System.Drawing.Point(215, 121);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(181, 336);
+            this.groupBox1.Size = new System.Drawing.Size(176, 376);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             // 
@@ -195,7 +195,7 @@
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(25, 20);
+            this.labelControl2.Location = new System.Drawing.Point(22, 20);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(122, 13);
             this.labelControl2.TabIndex = 6;
@@ -245,7 +245,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.Thistle;
+            this.groupBox2.BackColor = System.Drawing.Color.GhostWhite;
             this.groupBox2.Controls.Add(this.labelControl2);
             this.groupBox2.Controls.Add(this.cbxTKKhachThue);
             this.groupBox2.Controls.Add(this.btnThongKe);
@@ -253,9 +253,9 @@
             this.groupBox2.Controls.Add(this.cbxTrangThaiThue);
             this.groupBox2.Controls.Add(this.cbxTinhTrangHD);
             this.groupBox2.Controls.Add(this.labelControl5);
-            this.groupBox2.Location = new System.Drawing.Point(17, 131);
+            this.groupBox2.Location = new System.Drawing.Point(15, 121);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(164, 336);
+            this.groupBox2.Size = new System.Drawing.Size(174, 376);
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
             // 
@@ -263,7 +263,7 @@
             // 
             this.btnThongKe.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnThongKe.Appearance.Options.UseBackColor = true;
-            this.btnThongKe.Location = new System.Drawing.Point(42, 271);
+            this.btnThongKe.Location = new System.Drawing.Point(46, 301);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.Size = new System.Drawing.Size(75, 38);
             this.btnThongKe.TabIndex = 19;
@@ -273,7 +273,7 @@
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(36, 86);
+            this.labelControl8.Location = new System.Drawing.Point(34, 76);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(145, 13);
             this.labelControl8.TabIndex = 20;
@@ -283,7 +283,7 @@
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Location = new System.Drawing.Point(226, 86);
+            this.labelControl9.Location = new System.Drawing.Point(224, 76);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(135, 26);
             this.labelControl9.TabIndex = 22;
@@ -291,7 +291,7 @@
             // 
             // frmThuePhong
             // 
-            this.Appearance.BackColor = System.Drawing.Color.LavenderBlush;
+            this.Appearance.BackColor = System.Drawing.Color.Lavender;
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -303,7 +303,7 @@
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.dgvThuePhong);
             this.Name = "frmThuePhong";
-            this.Size = new System.Drawing.Size(1013, 526);
+            this.Size = new System.Drawing.Size(1013, 541);
             this.Load += new System.EventHandler(this.frmThuePhong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThuePhong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenKH.Properties)).EndInit();

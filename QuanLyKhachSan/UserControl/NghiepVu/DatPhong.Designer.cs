@@ -44,6 +44,7 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tbSoDem = new System.Windows.Forms.NumericUpDown();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.tbName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbPhone.Properties)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -55,18 +56,18 @@
             // 
             // tbName
             // 
-            this.tbName.Location = new System.Drawing.Point(230, 30);
+            this.tbName.Location = new System.Drawing.Point(218, 30);
             this.tbName.Name = "tbName";
             this.tbName.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbName.Properties.Appearance.Options.UseFont = true;
-            this.tbName.Size = new System.Drawing.Size(100, 26);
+            this.tbName.Size = new System.Drawing.Size(168, 26);
             this.tbName.TabIndex = 5;
             // 
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(89, 37);
+            this.labelControl2.Location = new System.Drawing.Point(80, 37);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(116, 19);
             this.labelControl2.TabIndex = 4;
@@ -74,18 +75,18 @@
             // 
             // tbPhone
             // 
-            this.tbPhone.Location = new System.Drawing.Point(522, 26);
+            this.tbPhone.Location = new System.Drawing.Point(536, 26);
             this.tbPhone.Name = "tbPhone";
             this.tbPhone.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPhone.Properties.Appearance.Options.UseFont = true;
-            this.tbPhone.Size = new System.Drawing.Size(100, 26);
+            this.tbPhone.Size = new System.Drawing.Size(137, 26);
             this.tbPhone.TabIndex = 7;
             // 
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(409, 33);
+            this.labelControl3.Location = new System.Drawing.Point(418, 33);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(100, 19);
             this.labelControl3.TabIndex = 6;
@@ -93,32 +94,32 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Thistle;
+            this.groupBox1.BackColor = System.Drawing.Color.GhostWhite;
             this.groupBox1.Controls.Add(this.labelControl3);
             this.groupBox1.Controls.Add(this.labelControl2);
             this.groupBox1.Controls.Add(this.tbPhone);
             this.groupBox1.Controls.Add(this.tbName);
-            this.groupBox1.Location = new System.Drawing.Point(71, 37);
+            this.groupBox1.Location = new System.Drawing.Point(71, 82);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(699, 79);
+            this.groupBox1.Size = new System.Drawing.Size(714, 79);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Khách Hàng";
             // 
             // tbMaPhong
             // 
-            this.tbMaPhong.Location = new System.Drawing.Point(227, 56);
+            this.tbMaPhong.Location = new System.Drawing.Point(218, 54);
             this.tbMaPhong.Name = "tbMaPhong";
             this.tbMaPhong.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbMaPhong.Properties.Appearance.Options.UseFont = true;
-            this.tbMaPhong.Size = new System.Drawing.Size(100, 26);
+            this.tbMaPhong.Size = new System.Drawing.Size(282, 26);
             this.tbMaPhong.TabIndex = 11;
             // 
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(144, 55);
+            this.labelControl4.Location = new System.Drawing.Point(135, 61);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(70, 19);
             this.labelControl4.TabIndex = 10;
@@ -128,7 +129,7 @@
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(68, 103);
+            this.labelControl7.Location = new System.Drawing.Point(59, 109);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(137, 19);
             this.labelControl7.TabIndex = 12;
@@ -136,7 +137,7 @@
             // 
             // tbDatCoc
             // 
-            this.tbDatCoc.Location = new System.Drawing.Point(228, 193);
+            this.tbDatCoc.Location = new System.Drawing.Point(219, 199);
             this.tbDatCoc.Name = "tbDatCoc";
             this.tbDatCoc.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbDatCoc.Properties.Appearance.Options.UseFont = true;
@@ -150,9 +151,9 @@
             this.simpleButton1.Appearance.BorderColor = System.Drawing.Color.Fuchsia;
             this.simpleButton1.Appearance.Options.UseBackColor = true;
             this.simpleButton1.Appearance.Options.UseBorderColor = true;
-            this.simpleButton1.Location = new System.Drawing.Point(227, 262);
+            this.simpleButton1.Location = new System.Drawing.Point(570, 266);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(140, 64);
+            this.simpleButton1.Size = new System.Drawing.Size(103, 57);
             this.simpleButton1.TabIndex = 0;
             this.simpleButton1.Text = "ĐẶT PHÒNG";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
@@ -161,7 +162,7 @@
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Location = new System.Drawing.Point(150, 196);
+            this.labelControl9.Location = new System.Drawing.Point(141, 202);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(55, 19);
             this.labelControl9.TabIndex = 16;
@@ -171,7 +172,7 @@
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(117, 143);
+            this.labelControl8.Location = new System.Drawing.Point(108, 149);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(97, 19);
             this.labelControl8.TabIndex = 18;
@@ -181,7 +182,7 @@
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Location = new System.Drawing.Point(463, 196);
+            this.labelControl10.Location = new System.Drawing.Point(454, 202);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(32, 19);
             this.labelControl10.TabIndex = 21;
@@ -190,14 +191,14 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(228, 97);
+            this.dateTimePicker1.Location = new System.Drawing.Point(219, 103);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 27);
+            this.dateTimePicker1.Size = new System.Drawing.Size(281, 27);
             this.dateTimePicker1.TabIndex = 22;
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.Thistle;
+            this.groupBox2.BackColor = System.Drawing.Color.GhostWhite;
             this.groupBox2.Controls.Add(this.tbSoDem);
             this.groupBox2.Controls.Add(this.dateTimePicker1);
             this.groupBox2.Controls.Add(this.labelControl10);
@@ -208,9 +209,9 @@
             this.groupBox2.Controls.Add(this.labelControl7);
             this.groupBox2.Controls.Add(this.labelControl4);
             this.groupBox2.Controls.Add(this.tbMaPhong);
-            this.groupBox2.Location = new System.Drawing.Point(71, 139);
+            this.groupBox2.Location = new System.Drawing.Point(71, 184);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(699, 346);
+            this.groupBox2.Size = new System.Drawing.Size(714, 346);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông Tin Thuê Phòng";
@@ -218,21 +219,35 @@
             // tbSoDem
             // 
             this.tbSoDem.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSoDem.Location = new System.Drawing.Point(227, 141);
+            this.tbSoDem.Location = new System.Drawing.Point(218, 147);
             this.tbSoDem.Name = "tbSoDem";
-            this.tbSoDem.Size = new System.Drawing.Size(57, 27);
+            this.tbSoDem.Size = new System.Drawing.Size(282, 27);
             this.tbSoDem.TabIndex = 24;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Options.UseBackColor = true;
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Location = new System.Drawing.Point(290, 15);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(232, 25);
+            this.labelControl1.TabIndex = 25;
+            this.labelControl1.Text = "LẬP PHIẾU ĐẶT PHÒNG ";
+            this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
             // 
             // DatPhong
             // 
-            this.Appearance.BackColor = System.Drawing.Color.LavenderBlush;
+            this.Appearance.BackColor = System.Drawing.Color.Lavender;
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "DatPhong";
-            this.Size = new System.Drawing.Size(846, 549);
+            this.Size = new System.Drawing.Size(863, 557);
             ((System.ComponentModel.ISupportInitialize)(this.tbName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbPhone.Properties)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -243,6 +258,7 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbSoDem)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -263,5 +279,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.NumericUpDown tbSoDem;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
     }
 }

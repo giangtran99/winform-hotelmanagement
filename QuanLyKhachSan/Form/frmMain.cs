@@ -126,5 +126,14 @@ namespace QuanLyKhachSan
             frmDichVu dv = new frmDichVu();
             panel.Controls.Add(dv);
         }
+
+        private void celeDangXuat(object sender, EventArgs e)
+        {
+            frmDangNhap fDK = new frmDangNhap();
+            fDK.Show();
+            this.Hide();
+        }
+
+       
     }
 }

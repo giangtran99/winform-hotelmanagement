@@ -17,9 +17,8 @@ namespace QuanLyKhachSan
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
             BonusSkins.Register();
-            Application.Run(new frmMain());
+            Application.Run(new frmDangNhap());
         }
     }
 }

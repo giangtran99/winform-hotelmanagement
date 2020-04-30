@@ -55,7 +55,7 @@
             this.dgvVatDung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVatDung.Location = new System.Drawing.Point(396, 82);
             this.dgvVatDung.Name = "dgvVatDung";
-            this.dgvVatDung.Size = new System.Drawing.Size(573, 414);
+            this.dgvVatDung.Size = new System.Drawing.Size(564, 414);
             this.dgvVatDung.TabIndex = 0;
             this.dgvVatDung.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -63,7 +63,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(224, 27);
+            this.label1.Location = new System.Drawing.Point(209, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 22);
             this.label1.TabIndex = 1;
@@ -92,7 +92,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(52, 27);
+            this.label2.Location = new System.Drawing.Point(38, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 22);
             this.label2.TabIndex = 3;
@@ -111,7 +111,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(57, 186);
+            this.label3.Location = new System.Drawing.Point(53, 184);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 22);
             this.label3.TabIndex = 5;
@@ -121,7 +121,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(245, 108);
+            this.label4.Location = new System.Drawing.Point(237, 108);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(36, 22);
             this.label4.TabIndex = 7;
@@ -148,7 +148,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(48, 108);
+            this.label5.Location = new System.Drawing.Point(38, 108);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(116, 22);
             this.label5.TabIndex = 9;
@@ -162,7 +162,7 @@
             this.btnThem.Appearance.Options.UseFont = true;
             this.btnThem.Location = new System.Drawing.Point(6, 342);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(68, 41);
+            this.btnThem.Size = new System.Drawing.Size(82, 41);
             this.btnThem.TabIndex = 11;
             this.btnThem.Text = "Thêm";
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
@@ -173,7 +173,7 @@
             this.btnTimKiem.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.btnTimKiem.Appearance.Options.UseBackColor = true;
             this.btnTimKiem.Appearance.Options.UseFont = true;
-            this.btnTimKiem.Location = new System.Drawing.Point(96, 342);
+            this.btnTimKiem.Location = new System.Drawing.Point(94, 342);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(80, 41);
             this.btnTimKiem.TabIndex = 12;
@@ -186,9 +186,9 @@
             this.btnXoa.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.btnXoa.Appearance.Options.UseBackColor = true;
             this.btnXoa.Appearance.Options.UseFont = true;
-            this.btnXoa.Location = new System.Drawing.Point(277, 342);
+            this.btnXoa.Location = new System.Drawing.Point(268, 342);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(65, 41);
+            this.btnXoa.Size = new System.Drawing.Size(74, 41);
             this.btnXoa.TabIndex = 13;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
@@ -199,9 +199,9 @@
             this.btnLuu.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.btnLuu.Appearance.Options.UseBackColor = true;
             this.btnLuu.Appearance.Options.UseFont = true;
-            this.btnLuu.Location = new System.Drawing.Point(199, 342);
+            this.btnLuu.Location = new System.Drawing.Point(180, 342);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(63, 41);
+            this.btnLuu.Size = new System.Drawing.Size(82, 41);
             this.btnLuu.TabIndex = 14;
             this.btnLuu.Text = "Lưu ";
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
@@ -219,7 +219,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Thistle;
+            this.groupBox1.BackColor = System.Drawing.Color.GhostWhite;
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btnLuu);
@@ -236,14 +236,14 @@
             this.groupBox1.Controls.Add(this.tbGia);
             this.groupBox1.Location = new System.Drawing.Point(21, 82);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(358, 414);
+            this.groupBox1.Size = new System.Drawing.Size(353, 414);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Thông Tin Vật Dụng";
             // 
             // frmVatDung
             // 
-            this.Appearance.BackColor = System.Drawing.Color.LavenderBlush;
+            this.Appearance.BackColor = System.Drawing.Color.Lavender;
             this.Appearance.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Appearance.Options.UseBackColor = true;
             this.Appearance.Options.UseFont = true;

@@ -44,6 +44,7 @@
             this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
@@ -229,7 +230,8 @@
             // accordionControlElement2
             // 
             this.accordionControlElement2.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement3});
+            this.accordionControlElement3,
+            this.accordionControlElement6});
             this.accordionControlElement2.Expanded = true;
             this.accordionControlElement2.Name = "accordionControlElement2";
             this.accordionControlElement2.Text = "HƯỚNG DẪN";
@@ -247,6 +249,19 @@
             this.accordionControlElement3.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement3.Text = "SỬ DỤNG PHẦN MỀM QUẢN LÝ KHÁCH SẠN";
             this.accordionControlElement3.Click += new System.EventHandler(this.accordionControlElement3_Click);
+            // 
+            // accordionControlElement6
+            // 
+            this.accordionControlElement6.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Right)});
+            this.accordionControlElement6.ImageOptions.Image = global::QuanLyKhachSan.Properties.Resources.icons8_exit_16;
+            this.accordionControlElement6.Name = "accordionControlElement6";
+            this.accordionControlElement6.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement6.Text = "ĐĂNG XUẤT";
+            this.accordionControlElement6.Click += new System.EventHandler(this.celeDangXuat);
             // 
             // fluentDesignFormControl1
             // 
@@ -300,6 +315,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement celeThuePhong;
         private System.Windows.Forms.Panel panel;
         private DevExpress.XtraBars.Navigation.AccordionControlElement clebDichVu;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement6;
     }
 }
 

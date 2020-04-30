@@ -200,7 +200,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Thistle;
+            this.groupBox1.BackColor = System.Drawing.Color.GhostWhite;
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txbID);
@@ -221,7 +221,7 @@
             // 
             // frmDichVu
             // 
-            this.Appearance.BackColor = System.Drawing.Color.LavenderBlush;
+            this.Appearance.BackColor = System.Drawing.Color.Lavender;
             this.Appearance.BorderColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
             this.Appearance.Options.UseBorderColor = true;

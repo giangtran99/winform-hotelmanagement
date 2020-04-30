@@ -29,17 +29,20 @@ namespace QuanLyKhachSan.UserControl
                 object rs = db.executeSelectQuery(new SqlCommand(query));
                 if (rs == null)
                 {
-                    query = "insert KHACHHANG(TenKH,SDT) values('" + tbName.Text + "','" + tbPhone.Text + "')";
+                    query = "insert KHACHHANG(TenKH,SDT) values(N'" + tbName.Text + "','" + tbPhone.Text + "')";
                     db.executeQuery(new SqlCommand(query));
+
+
                 }
 
                 DateTime date = DateTime.Now;
                 int maKh = 0, maHD = 0;
-                query = "insert HOADON(SoLuong,NgayLapHoaDon,TinhTrangThanhToan,GhiChu) values(1,'" + date.ToString().Split(' ')[0] + "',0,'" + date.ToString() + "')";
+                query = "insert HOADON(NgayLapHoaDon,TinhTrangThanhToan,GhiChu) values('" + date.ToString().Split(' ')[0] + "',0,'" + date.ToString() + "')";
                 db.executeQuery(new SqlCommand(query));
 
                 query = "select * from KHACHHANG where SDT = '" + tbPhone.Text + "'";
-                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-JFBL896\\SQLEXPRESS;Initial Catalog=QuanLyKhachSan;Integrated Security=True");
+              
+                SqlConnection conn = new SqlConnection(db.GetStrConnect);
                 conn.Open();
                 SqlCommand command = new SqlCommand(query, conn);
                 SqlDataReader reader = command.ExecuteReader(CommandBehavior.CloseConnection);
@@ -77,6 +80,11 @@ namespace QuanLyKhachSan.UserControl
             {
                 XtraMessageBox.Show(ex.Message.ToString(), "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void labelControl1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

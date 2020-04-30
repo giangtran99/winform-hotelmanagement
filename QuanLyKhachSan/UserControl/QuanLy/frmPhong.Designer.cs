@@ -130,7 +130,7 @@
             this.simpleButton1.Appearance.Options.UseBackColor = true;
             this.simpleButton1.Location = new System.Drawing.Point(144, 347);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(67, 42);
+            this.simpleButton1.Size = new System.Drawing.Size(70, 42);
             this.simpleButton1.TabIndex = 7;
             this.simpleButton1.Text = "SỬA";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
@@ -156,7 +156,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Thistle;
+            this.groupBox1.BackColor = System.Drawing.Color.GhostWhite;
             this.groupBox1.Controls.Add(this.labelControl1);
             this.groupBox1.Controls.Add(this.txtMaPhong);
             this.groupBox1.Controls.Add(this.cbxTrangThai);
@@ -174,7 +174,7 @@
             // 
             // frmPhong
             // 
-            this.Appearance.BackColor = System.Drawing.Color.LavenderBlush;
+            this.Appearance.BackColor = System.Drawing.Color.Lavender;
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

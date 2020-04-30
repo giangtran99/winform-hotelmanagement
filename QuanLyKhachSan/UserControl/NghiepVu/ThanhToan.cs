@@ -13,6 +13,14 @@ namespace QuanLyKhachSan.UserControl.NghiepVu
         {
             InitializeComponent();
         }
+        void ClearData()
+        {
+            dGVThuePhong.DataSource = null;
+            dGVSuDungDV.DataSource = null;
+            dGVDenBu.DataSource = null;
+            txbTen.Text = "";
+            txbSĐT.Text = "";
+        }
         private void BtnTim_Click(object sender, EventArgs e)
         {
 
@@ -97,11 +105,7 @@ namespace QuanLyKhachSan.UserControl.NghiepVu
          
             catch(SqlException)
             {
-                dGVThuePhong.DataSource = null;
-                dGVSuDungDV.DataSource = null;
-                dGVDenBu.DataSource = null;
-                txbTen.Text = "";
-                txbSĐT.Text = "";
+                ClearData();
                 XtraMessageBox.Show("Khách Hàng Đã Thanh Toán hoặc SĐT không tồn tại");
             }
 
@@ -162,13 +166,18 @@ namespace QuanLyKhachSan.UserControl.NghiepVu
                 //Đưa hóa đơn về TinhTrang đã thanh toán
                 SqlCommand cmd = new SqlCommand("UPDATE HOADON SET TinhTrangThanhToan = 1 WHERE MaHoaDon = @hd ");
                 cmd.Parameters.Add("@hd", _mahd);
+                //Cập nhật ThanhTien cho hóa đơn
+                SqlCommand cmd5 = new SqlCommand("UPDATE HOADON SET ThanhTien"+tong+" WHERE MaHoaDon = @hd ");
+                cmd5.Parameters.Add("@hd", _mahd);
+
+
                 db.executeSelectQuery(cmd1);
                 db.executeSelectQuery(cmd2);
                 db.executeSelectQuery(cmd);
              
                 XtraMessageBox.Show("Thanh toán thành công!");
             }
-            else { XtraMessageBox.Show("Thanh toán thất b"); }
+            else { XtraMessageBox.Show("Thanh toán thất bại"); }
         }
     }
 }

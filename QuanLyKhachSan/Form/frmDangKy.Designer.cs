@@ -75,7 +75,7 @@
             this.btnTao.Size = new System.Drawing.Size(92, 34);
             this.btnTao.TabIndex = 2;
             this.btnTao.Text = "TẠO ";
-            this.btnTao.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.btnTao.Click += new System.EventHandler(this.btnTao_Click);
             // 
             // lblTenDangNh
             // 
@@ -153,7 +153,7 @@
             this.radiogroupSex.Location = new System.Drawing.Point(189, 126);
             this.radiogroupSex.Name = "radiogroupSex";
             this.radiogroupSex.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Nam"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(true, "Nam"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(false, "Nữ")});
             this.radiogroupSex.Size = new System.Drawing.Size(200, 29);
             this.radiogroupSex.TabIndex = 15;
