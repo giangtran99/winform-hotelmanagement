@@ -33,7 +33,6 @@
             this.dgvThuePhong = new System.Windows.Forms.DataGridView();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.btnTimKiem = new DevExpress.XtraEditors.SimpleButton();
-            this.btnSua = new DevExpress.XtraEditors.SimpleButton();
             this.txtTenKH = new DevExpress.XtraEditors.TextEdit();
             this.txtSDT = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -51,6 +50,8 @@
             this.btnThongKe = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.xÓAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThuePhong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenKH.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSDT.Properties)).BeginInit();
@@ -60,6 +61,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cbxTrangThaiThue.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbxTinhTrangHD.Properties)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // sqlDataSource1
@@ -96,16 +98,6 @@
             this.btnTimKiem.Size = new System.Drawing.Size(75, 38);
             this.btnTimKiem.TabIndex = 2;
             this.btnTimKiem.Text = "TÌM KIẾM";
-            // 
-            // btnSua
-            // 
-            this.btnSua.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnSua.Appearance.Options.UseBackColor = true;
-            this.btnSua.Location = new System.Drawing.Point(419, 77);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(75, 22);
-            this.btnSua.TabIndex = 3;
-            this.btnSua.Text = "SỬA";
             // 
             // txtTenKH
             // 
@@ -289,17 +281,30 @@
             this.labelControl9.TabIndex = 22;
             this.labelControl9.Text = "Tìm kiếm thông tin lượt \r\nthuê theo khách hàng";
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.xÓAToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(99, 26);
+            // 
+            // xÓAToolStripMenuItem
+            // 
+            this.xÓAToolStripMenuItem.Name = "xÓAToolStripMenuItem";
+            this.xÓAToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.xÓAToolStripMenuItem.Text = "XÓA";
+            // 
             // frmThuePhong
             // 
             this.Appearance.BackColor = System.Drawing.Color.Lavender;
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.labelControl9);
             this.Controls.Add(this.labelControl8);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnSua);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.dgvThuePhong);
             this.Name = "frmThuePhong";
@@ -316,6 +321,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cbxTinhTrangHD.Properties)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -327,7 +333,6 @@
         private System.Windows.Forms.DataGridView dgvThuePhong;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.SimpleButton btnTimKiem;
-        private DevExpress.XtraEditors.SimpleButton btnSua;
         private DevExpress.XtraEditors.TextEdit txtTenKH;
         private DevExpress.XtraEditors.TextEdit txtSDT;
         private DevExpress.XtraEditors.LabelControl labelControl3;
@@ -345,5 +350,7 @@
         private DevExpress.XtraEditors.SimpleButton btnThongKe;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LabelControl labelControl9;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem xÓAToolStripMenuItem;
     }
 }

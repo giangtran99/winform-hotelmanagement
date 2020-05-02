@@ -37,8 +37,7 @@ namespace QuanLyKhachSan.UserControl
 
                 DateTime date = DateTime.Now;
                 int maKh = 0, maHD = 0;
-                query = "insert HOADON(NgayLapHoaDon,TinhTrangThanhToan,GhiChu) values('" + date.ToString().Split(' ')[0] + "',0,'" + date.ToString() + "')";
-                db.executeQuery(new SqlCommand(query));
+              
 
                 query = "select * from KHACHHANG where SDT = '" + tbPhone.Text + "'";
               
@@ -50,6 +49,8 @@ namespace QuanLyKhachSan.UserControl
                 {
                     maKh = reader.GetInt32(0);
                 }
+                query = "insert HOADON(NgayLapHoaDon,TinhTrangThanhToan,GhiChu,MaKH) values('" + date.ToString().Split(' ')[0] + "',0,'" + date.ToString() + "',"+maKh+")";
+                db.executeQuery(new SqlCommand(query));
                 conn.Close();
                 conn.Open();
                 query = "select * from HOADON where GhiChu = '" + date.ToString() + "'";
@@ -70,7 +71,7 @@ namespace QuanLyKhachSan.UserControl
                 if (rs2 != null)
                     throw new Exception("Phòng này đã được cho thuê. Vui lòng chọn phòng khác");
 
-                query = "insert THUEPHONG(MaPhong,MaKH,MaHoaDon,NgayBatDauThue,NgayTraPhong,DatCoc,SoDem) values('" + tbMaPhong.Text + "'," + maKh + "," + maHD + ",'" + date.ToString().Split(' ')[0] + "','" + date.AddDays(int.Parse(tbSoDem.Value.ToString())).ToString().Split(' ')[0] + "'," + tbDatCoc.Text + "," + tbSoDem.Value + ")";
+                query = "insert THUEPHONG(MaPhong,MaHoaDon,NgayBatDauThue,NgayTraPhong,DatCoc,SoDem) values('" + tbMaPhong.Text + "'," + maHD + ",'" + date.ToString().Split(' ')[0] + "','" + date.AddDays(int.Parse(tbSoDem.Value.ToString())).ToString().Split(' ')[0] + "'," + tbDatCoc.Text + "," + tbSoDem.Value + ")";
                 db.executeQuery(new SqlCommand(query));
                 query = "update PHONG set TrangThai = 1 where MaPhong = '"+tbMaPhong.Text+"'";
                 db.executeQuery(new SqlCommand(query));

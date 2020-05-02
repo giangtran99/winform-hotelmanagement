@@ -275,6 +275,7 @@
     <None Include="Resources\icons8-service-tips-161.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Hotel_banner.jpg" />
     <Content Include="Resources\icons8-exit-16.png" />
     <None Include="Resources\icons8-exit-161.png" />
   </ItemGroup>

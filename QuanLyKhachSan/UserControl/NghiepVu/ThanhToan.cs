@@ -39,7 +39,7 @@ namespace QuanLyKhachSan.UserControl.NghiepVu
                     sqlReader.Close();
 
 
-                    SqlCommand cmd4 = new SqlCommand("SELECT SUM(GiaThue*SoDem) as Gia,HOADON.MaHoaDon FROM PHONG,LOAIPHONG,THUEPHONG,KHACHHANG,HOADON WHERE PHONG.MaPhong=THUEPHONG.MaPhong AND LOAIPHONG.MaLoai = PHONG.MaLoai AND THUEPHONG.MaKH = KHACHHANG.MaKH AND HOADON.MaHoaDon = THUEPHONG.MaHoaDon AND TinhTrangThanhToan = 0 AND KHACHHANG.MaKH = @makh GROUP BY HOADON.MaHoaDon", DataAccessContext.connection);
+                    SqlCommand cmd4 = new SqlCommand("SELECT SUM(GiaThue*SoDem) as Gia,HOADON.MaHoaDon FROM PHONG,LOAIPHONG,THUEPHONG,KHACHHANG,HOADON WHERE PHONG.MaPhong=THUEPHONG.MaPhong AND LOAIPHONG.MaLoai = PHONG.MaLoai AND HOADON.MaKH = KHACHHANG.MaKH AND HOADON.MaHoaDon = THUEPHONG.MaHoaDon AND TinhTrangThanhToan = 0 AND KHACHHANG.MaKH = @makh GROUP BY HOADON.MaHoaDon", DataAccessContext.connection);
                     cmd4.Parameters.Add("@makh", makh);
                     var sqlReader1 = cmd4.ExecuteReader();
                     while (sqlReader1.Read())
@@ -48,7 +48,7 @@ namespace QuanLyKhachSan.UserControl.NghiepVu
                         tong = (int)sqlReader1["Gia"];
                     }
                     sqlReader1.Close();
-                    SqlCommand cmd7 = new SqlCommand("SELECT SUM(GiaDichVu*SoLuong) as Gia FROM SuDungDichVu,DICHVU,KHACHHANG,HOADON WHERE SuDungDichVu.MaHoaDon=HOADON.MaHoaDon AND SuDungDichVu.MaDichVu = DICHVU.MaDichVu AND SuDungDichVu.MaKH = KHACHHANG.MaKH AND TinhTrangThanhToan = 0 AND HOADON.MaHoaDon = @mahd GROUP BY HOADON.MaHoaDon", DataAccessContext.connection);
+                    SqlCommand cmd7 = new SqlCommand("SELECT SUM(GiaDichVu*SuDungDichVu.SoLuong) as Gia FROM SuDungDichVu,DICHVU,KHACHHANG,HOADON WHERE SuDungDichVu.MaHoaDon=HOADON.MaHoaDon AND SuDungDichVu.MaDichVu = DICHVU.MaDichVu AND HOADON.MaKH = KHACHHANG.MaKH AND TinhTrangThanhToan = 0 AND HOADON.MaHoaDon = @mahd GROUP BY HOADON.MaHoaDon", DataAccessContext.connection);
                     cmd7.Parameters.Add("@mahd", mahd);
                     var sqlReader3 = cmd7.ExecuteReader();
                     while (sqlReader3.Read())
@@ -56,7 +56,7 @@ namespace QuanLyKhachSan.UserControl.NghiepVu
                         tong = tong + ((int)sqlReader3["Gia"]);
                     }
                     sqlReader3.Close();
-                    SqlCommand cmd8 = new SqlCommand("SELECT SUM(GiaVatDung) as Gia FROM HOADON, PHONG, THUEPHONG, VATDUNG,KHACHHANG WHERE TinhTrang = N'hỏng' AND KHACHHANG.MaKH=THUEPHONG.MaKH AND VATDUNG.MaPhong=PHONG.MaPhong AND PHONG.MaPhong = THUEPHONG.MaPhong AND THUEPHONG.MaHoaDon = HOADON.MaHoaDon AND TinhTrangThanhToan = 0 AND HOADON.MaHoaDon = @mahd  GROUP BY HOADON.MaHoaDon", DataAccessContext.connection);
+                    SqlCommand cmd8 = new SqlCommand("SELECT SUM(GiaVatDung) as Gia FROM HOADON, PHONG, THUEPHONG, VATDUNG,KHACHHANG WHERE TinhTrang = N'hỏng' AND KHACHHANG.MaKH=HOADON.MaKH AND VATDUNG.MaPhong=PHONG.MaPhong AND PHONG.MaPhong = THUEPHONG.MaPhong AND THUEPHONG.MaHoaDon = HOADON.MaHoaDon AND TinhTrangThanhToan = 0 AND HOADON.MaHoaDon = @mahd  GROUP BY HOADON.MaHoaDon", DataAccessContext.connection);
                     cmd8.Parameters.Add("@mahd", mahd);
                     var sqlReader8 = cmd8.ExecuteReader();
 
@@ -77,19 +77,19 @@ namespace QuanLyKhachSan.UserControl.NghiepVu
                         sqlReader2.Close();
                     }
                     tong = 0;
-                    string cmd1 = "SELECT TenPhong 'Tên Phòng',GiaThue 'Giá Thuê',TenLoai 'Loại Phòng',DatCoc 'Tiền Đặt Cọc',SoDem 'Số Đêm Thuê' FROM PHONG,LOAIPHONG,THUEPHONG,KHACHHANG,HOADON WHERE PHONG.MaPhong=THUEPHONG.MaPhong AND LOAIPHONG.MaLoai = PHONG.MaLoai AND THUEPHONG.MaKH = KHACHHANG.MaKH AND HOADON.MaHoaDon = THUEPHONG.MaHoaDon AND TinhTrangThanhToan = 0 AND HOADON.MaHoaDon =" + mahd;
+                    string cmd1 = "SELECT TenPhong 'Tên Phòng',GiaThue 'Giá Thuê',TenLoai 'Loại Phòng',DatCoc 'Tiền Đặt Cọc',SoDem 'Số Đêm Thuê' FROM PHONG,LOAIPHONG,THUEPHONG,KHACHHANG,HOADON WHERE PHONG.MaPhong=THUEPHONG.MaPhong AND LOAIPHONG.MaLoai = PHONG.MaLoai AND HOADON.MaKH = KHACHHANG.MaKH AND HOADON.MaHoaDon = THUEPHONG.MaHoaDon AND TinhTrangThanhToan = 0 AND HOADON.MaHoaDon =" + mahd;
                     DataAccessContext oop = new DataAccessContext();
                     DataTable dataTable = new DataTable();
                     oop.readDatathroughAdapter(cmd1, dataTable);
                     dGVThuePhong.DataSource = dataTable;
 
-                    string cmd2 = "SELECT TENDV 'Tên dịch vụ',GiaDichVu 'Giá dịch vụ',SoLuong 'Số lượng' FROM SuDungDichVu,DICHVU,KHACHHANG,HOADON WHERE SuDungDichVu.MaHoaDon=HOADON.MaHoaDon AND SuDungDichVu.MaDichVu = DICHVU.MaDichVu AND SuDungDichVu.MaKH = KHACHHANG.MaKH AND TinhTrangThanhToan = 0 AND HOADON.MaHoaDon =" + mahd;
+                    string cmd2 = "SELECT TENDV 'Tên dịch vụ',GiaDichVu 'Giá dịch vụ',SuDungDichVu.SoLuong 'Số lượng' FROM SuDungDichVu,DICHVU,KHACHHANG,HOADON WHERE SuDungDichVu.MaHoaDon=HOADON.MaHoaDon AND SuDungDichVu.MaDichVu = DICHVU.MaDichVu AND HOADON.MaKH = KHACHHANG.MaKH AND TinhTrangThanhToan = 0 AND HOADON.MaHoaDon =" + mahd;
                     DataAccessContext oop1 = new DataAccessContext();
                     DataTable dataTable1 = new DataTable();
                     oop1.readDatathroughAdapter(cmd2, dataTable1);
                     dGVSuDungDV.DataSource = dataTable1;
 
-                    string cmd3 = "SELECT TenVatDung 'Tên vật dụng',GiaVatDung 'Giá vật dụng' FROM HOADON, PHONG, THUEPHONG, VATDUNG,KHACHHANG WHERE TinhTrang = N'hỏng' AND KHACHHANG.MaKH=THUEPHONG.MaKH AND VATDUNG.MaPhong=PHONG.MaPhong AND PHONG.MaPhong = THUEPHONG.MaPhong AND THUEPHONG.MaHoaDon = HOADON.MaHoaDon AND TinhTrangThanhToan = 0 AND HOADON.MaHoaDon =" + mahd;
+                    string cmd3 = "SELECT TenVatDung 'Tên vật dụng',GiaVatDung 'Giá vật dụng' FROM HOADON, PHONG, THUEPHONG, VATDUNG,KHACHHANG WHERE TinhTrang = N'hỏng' AND KHACHHANG.MaKH=HOADON.MaKH AND VATDUNG.MaPhong=PHONG.MaPhong AND PHONG.MaPhong = THUEPHONG.MaPhong AND THUEPHONG.MaHoaDon = HOADON.MaHoaDon AND TinhTrangThanhToan = 0 AND HOADON.MaHoaDon =" + mahd;
                     DataAccessContext oop2 = new DataAccessContext();
                     DataTable dataTable2 = new DataTable();
                     oop2.readDatathroughAdapter(cmd3, dataTable2);
@@ -136,7 +136,7 @@ namespace QuanLyKhachSan.UserControl.NghiepVu
                     //Lấy maHD
                     string _mahd = "";
                     
-                SqlCommand cmd4 = new SqlCommand("SELECT HOADON.MaHoaDon FROM PHONG,LOAIPHONG,THUEPHONG,KHACHHANG,HOADON WHERE PHONG.MaPhong=THUEPHONG.MaPhong AND LOAIPHONG.MaLoai = PHONG.MaLoai AND THUEPHONG.MaKH = KHACHHANG.MaKH AND HOADON.MaHoaDon = THUEPHONG.MaHoaDon AND TinhTrangThanhToan = 0 AND KHACHHANG.MaKH = @makh GROUP BY HOADON.MaHoaDon", DataAccessContext.connection);
+                SqlCommand cmd4 = new SqlCommand("SELECT HOADON.MaHoaDon FROM PHONG,LOAIPHONG,THUEPHONG,KHACHHANG,HOADON WHERE PHONG.MaPhong=THUEPHONG.MaPhong AND LOAIPHONG.MaLoai = PHONG.MaLoai AND HOADON.MaKH = KHACHHANG.MaKH AND HOADON.MaHoaDon = THUEPHONG.MaHoaDon AND TinhTrangThanhToan = 0 AND KHACHHANG.MaKH = @makh GROUP BY HOADON.MaHoaDon", DataAccessContext.connection);
                 cmd4.Parameters.Add("@makh", _makh);
                 var sqlReader1 = cmd4.ExecuteReader();
                 while (sqlReader1.Read())
