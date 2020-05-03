@@ -356,3 +356,30 @@ healthchecksdb
 MigrationBackup/
 
 # End of https://www.gitignore.io/api/visualstudio
+QuanLyKhachSan/bin/Debug/DevExpress.Dashboard.v19.1.Core.xml
+QuanLyKhachSan/bin/Debug/DevExpress.Dashboard.v19.1.Win.xml
+QuanLyKhachSan/bin/Debug/DevExpress.Data.v19.1.xml
+QuanLyKhachSan/bin/Debug/DevExpress.DataAccess.v19.1.UI.xml
+QuanLyKhachSan/bin/Debug/DevExpress.Pdf.v19.1.Core.xml
+QuanLyKhachSan/bin/Debug/DevExpress.PivotGrid.v19.1.Core.xml
+QuanLyKhachSan/bin/Debug/DevExpress.Printing.v19.1.Core.xml
+QuanLyKhachSan/bin/Debug/DevExpress.Spreadsheet.v19.1.Core.xml
+QuanLyKhachSan/bin/Debug/DevExpress.Utils.v19.1.xml
+QuanLyKhachSan/bin/Debug/DevExpress.Xpo.v19.1.xml
+QuanLyKhachSan/bin/Debug/DevExpress.XtraBars.v19.1.xml
+QuanLyKhachSan/bin/Debug/DevExpress.XtraCharts.v19.1.Wizard.xml
+QuanLyKhachSan/bin/Debug/DevExpress.XtraCharts.v19.1.xml
+QuanLyKhachSan/bin/Debug/DevExpress.XtraDiagram.v19.1.xml
+QuanLyKhachSan/bin/Debug/DevExpress.XtraEditors.v19.1.xml
+QuanLyKhachSan/bin/Debug/DevExpress.XtraGrid.v19.1.xml
+QuanLyKhachSan/bin/Debug/DevExpress.XtraLayout.v19.1.xml
+QuanLyKhachSan/bin/Debug/DevExpress.XtraNavBar.v19.1.xml
+QuanLyKhachSan/bin/Debug/DevExpress.XtraPivotGrid.v19.1.xml
+QuanLyKhachSan/bin/Debug/DevExpress.XtraTreeList.v19.1.xml
+QuanLyKhachSan/bin/Debug/DevExpress.XtraTreeMap.v19.1.xml
+QuanLyKhachSan/bin/Debug/DevExpress.XtraVerticalGrid.v19.1.xml
+*.exe
+*.xml
+*.pdb
+*.cache
+*.txt
