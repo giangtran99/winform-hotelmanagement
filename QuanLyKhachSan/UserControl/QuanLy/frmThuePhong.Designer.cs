@@ -98,6 +98,7 @@
             this.btnTimKiem.Size = new System.Drawing.Size(75, 38);
             this.btnTimKiem.TabIndex = 2;
             this.btnTimKiem.Text = "TÌM KIẾM";
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtTenKH
             // 
