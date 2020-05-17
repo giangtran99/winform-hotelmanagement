@@ -67,16 +67,19 @@ namespace QuanLyKhachSan
                         db.executeQuery(cmd);
                         XtraMessageBox.Show("Tạo hồ sơ thành công");
                     }
-                    else { XtraMessageBox.Show("Tên tài khoản đã tồn tại"); }
+                    else { XtraMessageBox.Show("Tên Tài khoản đã tồn tại", "Lỗi Người Dùng", MessageBoxButtons.OK, MessageBoxIcon.Warning); }
               
                 }    
                 else
-                { XtraMessageBox.Show("Xác nhận mật khẩu chưa chính xác !"); }
+                { 
+                    XtraMessageBox.Show("Xác nhận mật khẩu sai", "Lỗi Người Dùng", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
 
             }
             else  
             {
-                XtraMessageBox.Show("Chưa nhâp đủ thông tin !");
+                XtraMessageBox.Show("Chưa nhâp đủ thông tin !","Lỗi Người Dùng",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                
             }
      
            

@@ -41,11 +41,11 @@
             this.txbTongTien = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.dGVSuDungDV = new System.Windows.Forms.DataGridView();
-            this.dGVDenBu = new System.Windows.Forms.DataGridView();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.btnThanhToan = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.dGVDenBu = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.txbSDT.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txbTen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txbSĐT.Properties)).BeginInit();
@@ -57,14 +57,14 @@
             // 
             // txbSDT
             // 
-            this.txbSDT.Location = new System.Drawing.Point(141, 18);
+            this.txbSDT.Location = new System.Drawing.Point(177, 18);
             this.txbSDT.Name = "txbSDT";
             this.txbSDT.Size = new System.Drawing.Size(123, 20);
             this.txbSDT.TabIndex = 0;
             // 
             // txbTen
             // 
-            this.txbTen.Location = new System.Drawing.Point(591, 18);
+            this.txbTen.Location = new System.Drawing.Point(685, 18);
             this.txbTen.Name = "txbTen";
             this.txbTen.Size = new System.Drawing.Size(149, 20);
             this.txbTen.TabIndex = 1;
@@ -73,7 +73,7 @@
             // 
             this.btnTim.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnTim.Appearance.Options.UseBackColor = true;
-            this.btnTim.Location = new System.Drawing.Point(297, 13);
+            this.btnTim.Location = new System.Drawing.Point(333, 13);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(60, 29);
             this.btnTim.TabIndex = 2;
@@ -84,7 +84,7 @@
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(18, 19);
+            this.labelControl1.Location = new System.Drawing.Point(54, 19);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(105, 16);
             this.labelControl1.TabIndex = 4;
@@ -94,7 +94,7 @@
             // 
             this.lblKH.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblKH.Appearance.Options.UseFont = true;
-            this.lblKH.Location = new System.Drawing.Point(482, 21);
+            this.lblKH.Location = new System.Drawing.Point(576, 21);
             this.lblKH.Name = "lblKH";
             this.lblKH.Size = new System.Drawing.Size(92, 13);
             this.lblKH.TabIndex = 5;
@@ -104,7 +104,7 @@
             // 
             this.SĐT.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SĐT.Appearance.Options.UseFont = true;
-            this.SĐT.Location = new System.Drawing.Point(548, 55);
+            this.SĐT.Location = new System.Drawing.Point(642, 55);
             this.SĐT.Name = "SĐT";
             this.SĐT.Size = new System.Drawing.Size(26, 13);
             this.SĐT.TabIndex = 9;
@@ -112,7 +112,7 @@
             // 
             // txbSĐT
             // 
-            this.txbSĐT.Location = new System.Drawing.Point(591, 52);
+            this.txbSĐT.Location = new System.Drawing.Point(685, 52);
             this.txbSĐT.Name = "txbSĐT";
             this.txbSĐT.Size = new System.Drawing.Size(149, 20);
             this.txbSĐT.TabIndex = 8;
@@ -121,7 +121,7 @@
             // 
             this.dGVThuePhong.BackgroundColor = System.Drawing.SystemColors.Info;
             this.dGVThuePhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVThuePhong.Location = new System.Drawing.Point(49, 185);
+            this.dGVThuePhong.Location = new System.Drawing.Point(73, 174);
             this.dGVThuePhong.Name = "dGVThuePhong";
             this.dGVThuePhong.Size = new System.Drawing.Size(215, 241);
             this.dGVThuePhong.TabIndex = 12;
@@ -134,7 +134,7 @@
             this.labelControl3.Appearance.Options.UseBackColor = true;
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Vertical;
-            this.labelControl3.Location = new System.Drawing.Point(309, 101);
+            this.labelControl3.Location = new System.Drawing.Point(351, 86);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(193, 25);
             this.labelControl3.TabIndex = 16;
@@ -144,7 +144,7 @@
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(73, 476);
+            this.labelControl2.Location = new System.Drawing.Point(69, 488);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(94, 25);
             this.labelControl2.TabIndex = 17;
@@ -152,7 +152,7 @@
             // 
             // txbTongTien
             // 
-            this.txbTongTien.Location = new System.Drawing.Point(194, 473);
+            this.txbTongTien.Location = new System.Drawing.Point(175, 485);
             this.txbTongTien.Name = "txbTongTien";
             this.txbTongTien.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbTongTien.Properties.Appearance.Options.UseFont = true;
@@ -163,7 +163,7 @@
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(355, 476);
+            this.labelControl4.Location = new System.Drawing.Point(333, 488);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(42, 25);
             this.labelControl4.TabIndex = 19;
@@ -173,25 +173,16 @@
             // 
             this.dGVSuDungDV.BackgroundColor = System.Drawing.SystemColors.Info;
             this.dGVSuDungDV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVSuDungDV.Location = new System.Drawing.Point(309, 185);
+            this.dGVSuDungDV.Location = new System.Drawing.Point(351, 174);
             this.dGVSuDungDV.Name = "dGVSuDungDV";
             this.dGVSuDungDV.Size = new System.Drawing.Size(236, 241);
             this.dGVSuDungDV.TabIndex = 20;
-            // 
-            // dGVDenBu
-            // 
-            this.dGVDenBu.BackgroundColor = System.Drawing.SystemColors.Info;
-            this.dGVDenBu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVDenBu.Location = new System.Drawing.Point(591, 185);
-            this.dGVDenBu.Name = "dGVDenBu";
-            this.dGVDenBu.Size = new System.Drawing.Size(219, 241);
-            this.dGVDenBu.TabIndex = 21;
             // 
             // labelControl5
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Bernard MT Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(110, 154);
+            this.labelControl5.Location = new System.Drawing.Point(150, 143);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(58, 16);
             this.labelControl5.TabIndex = 22;
@@ -201,21 +192,11 @@
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Bernard MT Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(370, 154);
+            this.labelControl6.Location = new System.Drawing.Point(420, 143);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(81, 16);
             this.labelControl6.TabIndex = 23;
             this.labelControl6.Text = "Sử Dụng Dich Vụ";
-            // 
-            // labelControl7
-            // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Bernard MT Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(652, 154);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(87, 16);
-            this.labelControl7.TabIndex = 24;
-            this.labelControl7.Text = "Đền bù Vật dụng";
             // 
             // btnThanhToan
             // 
@@ -225,12 +206,31 @@
             this.btnThanhToan.Appearance.Options.UseBackColor = true;
             this.btnThanhToan.Appearance.Options.UseFont = true;
             this.btnThanhToan.Appearance.Options.UseForeColor = true;
-            this.btnThanhToan.Location = new System.Drawing.Point(641, 476);
+            this.btnThanhToan.Location = new System.Drawing.Point(721, 477);
             this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Size = new System.Drawing.Size(125, 51);
+            this.btnThanhToan.Size = new System.Drawing.Size(113, 51);
             this.btnThanhToan.TabIndex = 25;
             this.btnThanhToan.Text = "THANH TOÁN";
             this.btnThanhToan.Click += new System.EventHandler(this.BtnThanhToan_Click);
+            // 
+            // labelControl7
+            // 
+            this.labelControl7.Appearance.Font = new System.Drawing.Font("Bernard MT Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl7.Appearance.Options.UseFont = true;
+            this.labelControl7.Location = new System.Drawing.Point(711, 143);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(89, 16);
+            this.labelControl7.TabIndex = 28;
+            this.labelControl7.Text = "Đền Bù Vật Dụng";
+            // 
+            // dGVDenBu
+            // 
+            this.dGVDenBu.BackgroundColor = System.Drawing.SystemColors.Info;
+            this.dGVDenBu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dGVDenBu.Location = new System.Drawing.Point(642, 174);
+            this.dGVDenBu.Name = "dGVDenBu";
+            this.dGVDenBu.Size = new System.Drawing.Size(236, 241);
+            this.dGVDenBu.TabIndex = 27;
             // 
             // ThanhToan
             // 
@@ -238,11 +238,11 @@
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnThanhToan);
             this.Controls.Add(this.labelControl7);
+            this.Controls.Add(this.dGVDenBu);
+            this.Controls.Add(this.btnThanhToan);
             this.Controls.Add(this.labelControl6);
             this.Controls.Add(this.labelControl5);
-            this.Controls.Add(this.dGVDenBu);
             this.Controls.Add(this.dGVSuDungDV);
             this.Controls.Add(this.labelControl4);
             this.Controls.Add(this.txbTongTien);
@@ -257,7 +257,7 @@
             this.Controls.Add(this.txbTen);
             this.Controls.Add(this.txbSDT);
             this.Name = "ThanhToan";
-            this.Size = new System.Drawing.Size(868, 556);
+            this.Size = new System.Drawing.Size(928, 552);
             ((System.ComponentModel.ISupportInitialize)(this.txbSDT.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txbTen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txbSĐT.Properties)).EndInit();
@@ -285,10 +285,10 @@
         private DevExpress.XtraEditors.TextEdit txbTongTien;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private System.Windows.Forms.DataGridView dGVSuDungDV;
-        private System.Windows.Forms.DataGridView dGVDenBu;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.SimpleButton btnThanhToan;
+        private DevExpress.XtraEditors.LabelControl labelControl7;
+        private System.Windows.Forms.DataGridView dGVDenBu;
     }
 }

@@ -1198,3 +1198,13 @@ D:\Study\College Stuff\Nam3\Kỳ 2\Thực tập nhóm\QuanLyKhachSan\QuanLyKhach
 D:\Study\College Stuff\Nam3\Kỳ 2\Thực tập nhóm\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csproj.CopyComplete
 D:\Study\College Stuff\Nam3\Kỳ 2\Thực tập nhóm\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.exe
 D:\Study\College Stuff\Nam3\Kỳ 2\Thực tập nhóm\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb
+C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.UserControl.frmHuongDan.resources
+C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.Form.DVTuto.resources
+C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.Form.DatPhongTuto.resources
+C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.Form.KHTuto.resources
+C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.Form.NDTuto.resources
+C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.Form.PhongTuto.resources
+C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.Form.SDDVTuto.resources
+C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.Form.ThanhToanTuto.resources
+C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.Form.ThuePhongTuto.resources
+C:\Users\thg60\OneDrive\Desktop\QuanLyKhachSan\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.Form.VatDungTuto.resources

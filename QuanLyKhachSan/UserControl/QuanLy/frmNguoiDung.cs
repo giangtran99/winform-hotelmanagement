@@ -54,17 +54,6 @@ namespace QuanLyKhachSan.UserControl
              
         }
 
-        private void btnTimKiem_Click(object sender, EventArgs e)
-        {
-            ClearDataGridView();
-            DataTable dt = new DataTable();
-            string query = "select * from NHANVIEN where TaiKhoan like '%"+txtTaiKhoan.Text+"%' " +
-                "and HoTen like N'%"+txtTenNV.Text+"%' and SDT like '%"+txtSDT.Text+"%' ";
-            db.readDatathroughAdapter(query, dt);
-            dgvNhanVien.DataSource = dt;
-            ClearTextBox();
-        }
-
         private void btnXoa_Click(object sender, EventArgs e)
         {
             int selectIndex = dgvNhanVien.SelectedRows[0].Index;
@@ -112,6 +101,17 @@ namespace QuanLyKhachSan.UserControl
             }
             XtraMessageBox.Show("Lưu thành công");
             LoadData();
+        }
+
+        private void btnTimKiem_Click_1(object sender, EventArgs e)
+        {
+            ClearDataGridView();
+            DataTable dt = new DataTable();
+            string query = "select * from NHANVIEN where TaiKhoan like '%" + txtTaiKhoan.Text + "%' " +
+                "and HoTen like N'%" + txtTenNV.Text + "%' and SDT like '%" + txtSDT.Text + "%' ";
+            db.readDatathroughAdapter(query, dt);
+            dgvNhanVien.DataSource = dt;
+            ClearTextBox();
         }
     }
 }

@@ -52,12 +52,12 @@
             this.dgvPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPhong.Location = new System.Drawing.Point(328, 69);
             this.dgvPhong.Name = "dgvPhong";
-            this.dgvPhong.Size = new System.Drawing.Size(552, 414);
+            this.dgvPhong.Size = new System.Drawing.Size(577, 460);
             this.dgvPhong.TabIndex = 0;
             // 
             // cbxTrangThai
             // 
-            this.cbxTrangThai.Location = new System.Drawing.Point(58, 76);
+            this.cbxTrangThai.Location = new System.Drawing.Point(57, 97);
             this.cbxTrangThai.Name = "cbxTrangThai";
             this.cbxTrangThai.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxTrangThai.Properties.Appearance.Options.UseFont = true;
@@ -68,7 +68,7 @@
             // 
             // cbxLoaiPhong
             // 
-            this.cbxLoaiPhong.Location = new System.Drawing.Point(58, 160);
+            this.cbxLoaiPhong.Location = new System.Drawing.Point(57, 181);
             this.cbxLoaiPhong.Name = "cbxLoaiPhong";
             this.cbxLoaiPhong.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxLoaiPhong.Properties.Appearance.Options.UseFont = true;
@@ -83,7 +83,7 @@
             this.btnTimKiem.Appearance.ForeColor = System.Drawing.Color.Black;
             this.btnTimKiem.Appearance.Options.UseBackColor = true;
             this.btnTimKiem.Appearance.Options.UseForeColor = true;
-            this.btnTimKiem.Location = new System.Drawing.Point(45, 345);
+            this.btnTimKiem.Location = new System.Drawing.Point(40, 376);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(70, 45);
             this.btnTimKiem.TabIndex = 3;
@@ -94,7 +94,7 @@
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(58, 34);
+            this.labelControl1.Location = new System.Drawing.Point(57, 55);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(141, 18);
             this.labelControl1.TabIndex = 4;
@@ -104,7 +104,7 @@
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(78, 122);
+            this.labelControl2.Location = new System.Drawing.Point(77, 143);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(90, 18);
             this.labelControl2.TabIndex = 5;
@@ -128,7 +128,7 @@
             // 
             this.simpleButton1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.simpleButton1.Appearance.Options.UseBackColor = true;
-            this.simpleButton1.Location = new System.Drawing.Point(144, 347);
+            this.simpleButton1.Location = new System.Drawing.Point(139, 378);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(70, 42);
             this.simpleButton1.TabIndex = 7;
@@ -139,7 +139,7 @@
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(78, 214);
+            this.labelControl4.Location = new System.Drawing.Point(77, 235);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(79, 18);
             this.labelControl4.TabIndex = 9;
@@ -147,7 +147,7 @@
             // 
             // txtMaPhong
             // 
-            this.txtMaPhong.Location = new System.Drawing.Point(58, 249);
+            this.txtMaPhong.Location = new System.Drawing.Point(57, 270);
             this.txtMaPhong.Name = "txtMaPhong";
             this.txtMaPhong.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaPhong.Properties.Appearance.Options.UseFont = true;
@@ -167,7 +167,7 @@
             this.groupBox1.Controls.Add(this.labelControl2);
             this.groupBox1.Location = new System.Drawing.Point(36, 69);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(256, 414);
+            this.groupBox1.Size = new System.Drawing.Size(256, 460);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Phòng";
@@ -182,7 +182,7 @@
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.dgvPhong);
             this.Name = "frmPhong";
-            this.Size = new System.Drawing.Size(949, 527);
+            this.Size = new System.Drawing.Size(928, 552);
             this.Load += new System.EventHandler(this.frmPhong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbxTrangThai.Properties)).EndInit();

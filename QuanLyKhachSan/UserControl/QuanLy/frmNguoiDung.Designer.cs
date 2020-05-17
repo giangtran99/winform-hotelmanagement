@@ -55,7 +55,7 @@
             this.dgvNhanVien.Location = new System.Drawing.Point(327, 64);
             this.dgvNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.dgvNhanVien.Name = "dgvNhanVien";
-            this.dgvNhanVien.Size = new System.Drawing.Size(555, 395);
+            this.dgvNhanVien.Size = new System.Drawing.Size(577, 462);
             this.dgvNhanVien.TabIndex = 0;
             // 
             // labelControl1
@@ -87,7 +87,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(265, 395);
+            this.groupBox1.Size = new System.Drawing.Size(265, 462);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Nhân Viên";
@@ -96,20 +96,20 @@
             // 
             this.btnTimKiem.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnTimKiem.Appearance.Options.UseBackColor = true;
-            this.btnTimKiem.Location = new System.Drawing.Point(174, 328);
+            this.btnTimKiem.Location = new System.Drawing.Point(179, 371);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(69, 47);
-            this.btnTimKiem.TabIndex = 9;
+            this.btnTimKiem.Size = new System.Drawing.Size(58, 47);
+            this.btnTimKiem.TabIndex = 10;
             this.btnTimKiem.Text = "TÌM KIẾM";
-            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click_1);
             // 
             // btnXoa
             // 
             this.btnXoa.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnXoa.Appearance.Options.UseBackColor = true;
-            this.btnXoa.Location = new System.Drawing.Point(94, 328);
+            this.btnXoa.Location = new System.Drawing.Point(107, 371);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(74, 47);
+            this.btnXoa.Size = new System.Drawing.Size(52, 47);
             this.btnXoa.TabIndex = 8;
             this.btnXoa.Text = "XÓA";
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
@@ -118,9 +118,9 @@
             // 
             this.btnSua.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnSua.Appearance.Options.UseBackColor = true;
-            this.btnSua.Location = new System.Drawing.Point(17, 328);
+            this.btnSua.Location = new System.Drawing.Point(30, 371);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(71, 47);
+            this.btnSua.Size = new System.Drawing.Size(55, 47);
             this.btnSua.TabIndex = 6;
             this.btnSua.Text = "SỬA";
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
@@ -201,7 +201,7 @@
             this.Controls.Add(this.dgvNhanVien);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmNguoiDung";
-            this.Size = new System.Drawing.Size(912, 500);
+            this.Size = new System.Drawing.Size(928, 552);
             this.Load += new System.EventHandler(this.frmNguoiDung_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -219,7 +219,6 @@
         private System.Windows.Forms.DataGridView dgvNhanVien;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private DevExpress.XtraEditors.SimpleButton btnTimKiem;
         private DevExpress.XtraEditors.SimpleButton btnXoa;
         private DevExpress.XtraEditors.SimpleButton btnSua;
         private DevExpress.XtraEditors.LabelControl labelControl4;
@@ -229,5 +228,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit txtTenNV;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private DevExpress.XtraEditors.SimpleButton btnTimKiem;
     }
 }

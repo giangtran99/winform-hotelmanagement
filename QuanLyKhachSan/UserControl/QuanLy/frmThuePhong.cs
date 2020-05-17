@@ -37,6 +37,13 @@ namespace QuanLyKhachSan.UserControl
             //cbx Tinh Trang Hoa don
             cbxTinhTrangHD.Properties.Items.Add("Đã Thanh Toán");
             cbxTinhTrangHD.Properties.Items.Add("Chưa Thanh Toán");
+            //cbx Tình Trạng Phòng
+            
+            /*
+            cbxTrangThaiThue.Properties.Items.Add("Trống");
+            cbxTrangThaiThue.Properties.Items.Add("Không Trống");
+            */
+
 
         }
 
@@ -110,10 +117,18 @@ namespace QuanLyKhachSan.UserControl
             return sThanhToan;
         }
 
-        private void btnThongKe_Click(object sender, EventArgs e)
+        private void btnTimKiem_Click(object sender, EventArgs e)
         {
+            dgvThuePhong.DataSource = null;
+            string query = "select p.TenPhong,kh.TenKH,kh.SDT,kh.MaKH,tp.NgayBatDauThue,tp.NgayTraPhong,tp.SoDem,hd.TinhTrangThanhToan,hd.MaHoaDon,tp.DatCoc,p.MaPhong from HOADON hd,THUEPHONG tp,PHONG p ,KHACHHANG kh" +
+            " where tp.MaPhong = p.MaPhong and kh.MaKH = hd.MaKH and hd.MaHoaDon = tp.MaHoaDon and kh.TenKH like N'%" + txtTenKH.Text + "%' and kh.SDT like N'%" + txtSDT.Text + "%' and kh.MaKH like '%" + txtMaKH.Text + "%'";
+            DataTable dt = new DataTable();
+            db.readDatathroughAdapter(query, dt);
+            dgvThuePhong.DataSource = dt;
+        }
 
-
+        private void btnThongKe_Click_1(object sender, EventArgs e)
+        {
             string query = "";
             if (cbxTKKhachThue.Text == "Trong Ngày")
             {
@@ -136,16 +151,6 @@ namespace QuanLyKhachSan.UserControl
             db.readDatathroughAdapter(query, dt);
             dgvThuePhong.DataSource = dt;
             ClearTextBox();
-        }
-
-        private void btnTimKiem_Click(object sender, EventArgs e)
-        {
-            dgvThuePhong.DataSource = null;
-            string query = "select p.TenPhong,kh.TenKH,kh.SDT,kh.MaKH,tp.NgayBatDauThue,tp.NgayTraPhong,tp.SoDem,hd.TinhTrangThanhToan,hd.MaHoaDon,tp.DatCoc,p.MaPhong from HOADON hd,THUEPHONG tp,PHONG p ,KHACHHANG kh" +
-            " where tp.MaPhong = p.MaPhong and kh.MaKH = hd.MaKH and hd.MaHoaDon = tp.MaHoaDon and kh.TenKH like N'%" + txtTenKH.Text + "%' and kh.SDT like N'%" + txtSDT.Text + "%' and kh.MaKH like '%" + txtMaKH.Text + "%'";
-            DataTable dt = new DataTable();
-            db.readDatathroughAdapter(query, dt);
-            dgvThuePhong.DataSource = dt;
         }
     }
 }

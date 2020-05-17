@@ -115,21 +115,29 @@ namespace QuanLyKhachSan.UserControl.QuanLy
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            if (isEmpty())
+            try
             {
-                XtraMessageBox.Show("Vui lòng điền đầy đủ thông tin bao gồm: Mã Khách hàng, Mã Hóa Đơn, Mã Dịch Vụ và Số lượng (Lưu ý: phải khác 0)", "Thông báo.");
-            }
-            else
-            {
-                SqlCommand insert1 = new SqlCommand("INSERT into SuDungDichVu(MaDichVu,MaHoaDon,SoLuong) " +
-                    "VALUES ('" + cbxMaDV.Text + "','" + txtMaHD.Text + "','" + numberricSoLuong.Value + "')");
-                /*SqlCommand insert2 = new SqlCommand("INSERT into HOADON(MaKH,MaHoaDon,SoLuong) " +
-                    "VALUES ('" + txtMaKH.Text + "','" + txtMaHD.Text + "','" + numberricSoLuong.Value + "')");*/
+                if (isEmpty())
+                {
+                    XtraMessageBox.Show("Vui lòng điền đầy đủ thông tin bao gồm: Mã Khách hàng, Mã Hóa Đơn, Mã Dịch Vụ và Số lượng (Lưu ý: phải khác 0)", "Thông báo.");
+                }
+                else
+                {
+                    SqlCommand insert1 = new SqlCommand("INSERT into SuDungDichVu(MaDichVu,MaHoaDon,SoLuong,NgayDungDichVu) " +
+                        "VALUES ('" + cbxMaDV.Text + "','" + txtMaHD.Text + "','" + numberricSoLuong.Value + "',CAST('" + DateTime.Now.ToString() + "' AS DATE))");
+                    /*SqlCommand insert2 = new SqlCommand("INSERT into HOADON(MaKH,MaHoaDon,SoLuong) " +
+                        "VALUES ('" + txtMaKH.Text + "','" + txtMaHD.Text + "','" + numberricSoLuong.Value + "')");*/
 
-                db.executeSelectQuery(insert1);
-                XtraMessageBox.Show("Thêm thành công.", "Thông báo.");
+                    db.executeSelectQuery(insert1);
+                    XtraMessageBox.Show("Thêm thành công.", "Thông báo.");
+                }
+                loadData();
             }
-            loadData();
+            catch
+            {
+                XtraMessageBox.Show("Khách hàng đã sử dụng dịch vụ này trong ngày.Quay lại vào ngày mai");
+            }
+           
         }
 
         private void btnSua_Click(object sender, EventArgs e)

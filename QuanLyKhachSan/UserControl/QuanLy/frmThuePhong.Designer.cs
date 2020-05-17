@@ -42,8 +42,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cbxTKKhachThue = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.cbxTrangThaiThue = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.cbxTinhTrangHD = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -58,7 +56,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtMaKH.Properties)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbxTKKhachThue.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbxTrangThaiThue.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbxTinhTrangHD.Properties)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -72,9 +69,9 @@
             // 
             this.dgvThuePhong.BackgroundColor = System.Drawing.Color.LightYellow;
             this.dgvThuePhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvThuePhong.Location = new System.Drawing.Point(419, 99);
+            this.dgvThuePhong.Location = new System.Drawing.Point(419, 76);
             this.dgvThuePhong.Name = "dgvThuePhong";
-            this.dgvThuePhong.Size = new System.Drawing.Size(569, 408);
+            this.dgvThuePhong.Size = new System.Drawing.Size(488, 431);
             this.dgvThuePhong.TabIndex = 0;
             // 
             // labelControl1
@@ -169,7 +166,7 @@
             this.groupBox1.Controls.Add(this.btnTimKiem);
             this.groupBox1.Location = new System.Drawing.Point(215, 121);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(176, 376);
+            this.groupBox1.Size = new System.Drawing.Size(176, 386);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             // 
@@ -194,30 +191,9 @@
             this.labelControl2.TabIndex = 6;
             this.labelControl2.Text = "Thống kê khách thuê";
             // 
-            // cbxTrangThaiThue
-            // 
-            this.cbxTrangThaiThue.Location = new System.Drawing.Point(29, 132);
-            this.cbxTrangThaiThue.Name = "cbxTrangThaiThue";
-            this.cbxTrangThaiThue.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxTrangThaiThue.Properties.Appearance.Options.UseFont = true;
-            this.cbxTrangThaiThue.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbxTrangThaiThue.Size = new System.Drawing.Size(118, 20);
-            this.cbxTrangThaiThue.TabIndex = 11;
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(22, 96);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(135, 13);
-            this.labelControl5.TabIndex = 12;
-            this.labelControl5.Text = "Trạng Thái Thuê Phòng";
-            // 
             // cbxTinhTrangHD
             // 
-            this.cbxTinhTrangHD.Location = new System.Drawing.Point(29, 211);
+            this.cbxTinhTrangHD.Location = new System.Drawing.Point(29, 134);
             this.cbxTinhTrangHD.Name = "cbxTinhTrangHD";
             this.cbxTinhTrangHD.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxTinhTrangHD.Properties.Appearance.Options.UseFont = true;
@@ -230,7 +206,7 @@
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(29, 176);
+            this.labelControl6.Location = new System.Drawing.Point(29, 99);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(115, 13);
             this.labelControl6.TabIndex = 14;
@@ -243,12 +219,10 @@
             this.groupBox2.Controls.Add(this.cbxTKKhachThue);
             this.groupBox2.Controls.Add(this.btnThongKe);
             this.groupBox2.Controls.Add(this.labelControl6);
-            this.groupBox2.Controls.Add(this.cbxTrangThaiThue);
             this.groupBox2.Controls.Add(this.cbxTinhTrangHD);
-            this.groupBox2.Controls.Add(this.labelControl5);
             this.groupBox2.Location = new System.Drawing.Point(15, 121);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(174, 376);
+            this.groupBox2.Size = new System.Drawing.Size(174, 386);
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
             // 
@@ -261,6 +235,7 @@
             this.btnThongKe.Size = new System.Drawing.Size(75, 38);
             this.btnThongKe.TabIndex = 19;
             this.btnThongKe.Text = "THỐNG KÊ";
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click_1);
             // 
             // labelControl8
             // 
@@ -309,7 +284,7 @@
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.dgvThuePhong);
             this.Name = "frmThuePhong";
-            this.Size = new System.Drawing.Size(1013, 541);
+            this.Size = new System.Drawing.Size(928, 552);
             this.Load += new System.EventHandler(this.frmThuePhong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThuePhong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenKH.Properties)).EndInit();
@@ -318,7 +293,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbxTKKhachThue.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbxTrangThaiThue.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbxTinhTrangHD.Properties)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -343,8 +317,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private DevExpress.XtraEditors.ComboBoxEdit cbxTKKhachThue;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.ComboBoxEdit cbxTrangThaiThue;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.ComboBoxEdit cbxTinhTrangHD;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private System.Windows.Forms.GroupBox groupBox2;

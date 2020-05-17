@@ -99,7 +99,7 @@
             this.groupBox1.Controls.Add(this.labelControl2);
             this.groupBox1.Controls.Add(this.tbPhone);
             this.groupBox1.Controls.Add(this.tbName);
-            this.groupBox1.Location = new System.Drawing.Point(71, 82);
+            this.groupBox1.Location = new System.Drawing.Point(104, 65);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(714, 79);
             this.groupBox1.TabIndex = 8;
@@ -146,14 +146,16 @@
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.PaleTurquoise;
             this.simpleButton1.Appearance.BackColor2 = System.Drawing.Color.White;
             this.simpleButton1.Appearance.BorderColor = System.Drawing.Color.Fuchsia;
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton1.Appearance.Options.UseBackColor = true;
             this.simpleButton1.Appearance.Options.UseBorderColor = true;
-            this.simpleButton1.Location = new System.Drawing.Point(570, 266);
+            this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.Location = new System.Drawing.Point(560, 270);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(103, 57);
+            this.simpleButton1.Size = new System.Drawing.Size(113, 53);
             this.simpleButton1.TabIndex = 0;
             this.simpleButton1.Text = "ĐẶT PHÒNG";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
@@ -209,7 +211,7 @@
             this.groupBox2.Controls.Add(this.labelControl7);
             this.groupBox2.Controls.Add(this.labelControl4);
             this.groupBox2.Controls.Add(this.tbMaPhong);
-            this.groupBox2.Location = new System.Drawing.Point(71, 184);
+            this.groupBox2.Location = new System.Drawing.Point(104, 184);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(714, 346);
             this.groupBox2.TabIndex = 9;
@@ -230,7 +232,7 @@
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseBackColor = true;
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(290, 15);
+            this.labelControl1.Location = new System.Drawing.Point(358, 12);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(232, 25);
             this.labelControl1.TabIndex = 25;
@@ -247,7 +249,8 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "DatPhong";
-            this.Size = new System.Drawing.Size(863, 557);
+            this.Size = new System.Drawing.Size(928, 552);
+            this.Load += new System.EventHandler(this.DatPhong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tbName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbPhone.Properties)).EndInit();
             this.groupBox1.ResumeLayout(false);

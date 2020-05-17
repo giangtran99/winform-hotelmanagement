@@ -19,7 +19,7 @@ namespace QuanLyKhachSan.DAO
 
         //privatestatic string strConnString = "Data Source=DESKTOP-PGQHHD3\\SQLEXPRESS;Initial Catalog=QuanLyKhachSan;Integrated Security=True";
         //private static string strConnString = "Data Source=DESKTOP-JFBL896\\SQLEXPRESS;Initial Catalog=QuanLyKhachSan;Integrated Security=True";
-        private static string strConnString = "Data Source=DESKTOP-B6771TG;Initial Catalog=QuanLyKhachSan;Integrated Security=True";
+        private static string strConnString = "Data Source=DESKTOP-B6771TG\\SQLEXPRESS;Initial Catalog=QuanLyKhachSan;Integrated Security=True";
         //private static string strConnString = "Data Source=DESKTOP-2NJ6H39;Initial Catalog=QuanLyKhachSan;Integrated Security=True";
         //private static string strConnString = "Data Source=WIN7PROX64\\SQLEXPRESS;Initial Catalog=QuanLyKhachSan;Integrated Security=True"; //Tung
         public string GetStrConnect
@@ -27,6 +27,7 @@ namespace QuanLyKhachSan.DAO
             get => strConnString;
             private set => strConnString = value;
         }
+
 
         public void createConn()
         {

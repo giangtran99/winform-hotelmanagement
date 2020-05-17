@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using QuanLyKhachSan.UserControl;
 using QuanLyKhachSan.UserControl.QuanLy;
 using QuanLyKhachSan.UserControl.NghiepVu;
+using QuanLyKhachSan.Form;
 
 namespace QuanLyKhachSan
 {
@@ -17,6 +18,8 @@ namespace QuanLyKhachSan
     {
         public frmMain()
         {
+            this.KeyPreview = true;
+            KeyDown += new KeyEventHandler(fluentDesignFormContainer1_KeyUp);
             InitializeComponent();
         }
 
@@ -134,6 +137,50 @@ namespace QuanLyKhachSan
             this.Hide();
         }
 
-       
+        private void fluentDesignFormContainer1_KeyUp(object sender, KeyEventArgs e)
+        {
+            switch(e.KeyCode)
+            {
+                    case Keys.F1:
+                    DVTuto dv = new DVTuto();
+                    dv.Show();
+                    break;
+                case Keys.F2:
+                    KHTuto dv1 = new KHTuto();
+                    dv1.Show();
+                    break;
+                case Keys.F3:
+                    SDDVTuto dv2 = new SDDVTuto();
+                    dv2.Show();
+                    break;
+                case Keys.F4:
+                    ThuePhongTuto dv3 = new ThuePhongTuto();
+                    dv3.Show();
+                    break;
+                case Keys.F5:
+                    NDTuto dv4 = new NDTuto();
+                    dv4.Show();
+                    break;
+                case Keys.F6:
+                    VatDungTuto dv5 = new VatDungTuto();
+                    dv5.Show();
+                    break;
+                case Keys.F7:
+                    ThanhToanTuto dv6 = new ThanhToanTuto();
+                    dv6.Show();
+                    break;
+                case Keys.F8:
+                    DatPhongTuto dv7 = new DatPhongTuto();
+                    dv7.Show();
+                    break;
+                case Keys.F9:
+                    PhongTuto dv8 = new PhongTuto();
+                    dv8.Show();
+                    break;
+
+            }
+          
+        
+        }
     }
 }

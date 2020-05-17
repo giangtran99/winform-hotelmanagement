@@ -50,12 +50,12 @@
             // 
             this.dataGridViewService.BackgroundColor = System.Drawing.SystemColors.Info;
             this.dataGridViewService.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewService.Location = new System.Drawing.Point(346, 92);
+            this.dataGridViewService.Location = new System.Drawing.Point(383, 92);
             this.dataGridViewService.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewService.Name = "dataGridViewService";
             this.dataGridViewService.RowHeadersWidth = 51;
             this.dataGridViewService.RowTemplate.Height = 24;
-            this.dataGridViewService.Size = new System.Drawing.Size(470, 381);
+            this.dataGridViewService.Size = new System.Drawing.Size(520, 427);
             this.dataGridViewService.TabIndex = 0;
             this.dataGridViewService.Click += new System.EventHandler(this.dataGridViewService_Click);
             // 
@@ -64,7 +64,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Bisque;
             this.label1.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(444, 29);
+            this.label1.Location = new System.Drawing.Point(534, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(182, 25);
             this.label1.TabIndex = 1;
@@ -133,7 +133,7 @@
             this.buttonEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonEdit.Font = new System.Drawing.Font("Cambria", 12F);
-            this.buttonEdit.Location = new System.Drawing.Point(178, 254);
+            this.buttonEdit.Location = new System.Drawing.Point(174, 292);
             this.buttonEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(86, 42);
@@ -147,7 +147,7 @@
             this.buttonDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonDelete.Font = new System.Drawing.Font("Cambria", 12F);
-            this.buttonDelete.Location = new System.Drawing.Point(44, 320);
+            this.buttonDelete.Location = new System.Drawing.Point(40, 358);
             this.buttonDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(87, 42);
@@ -161,7 +161,7 @@
             this.buttonSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.buttonSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSearch.Font = new System.Drawing.Font("Cambria", 12F);
-            this.buttonSearch.Location = new System.Drawing.Point(178, 320);
+            this.buttonSearch.Location = new System.Drawing.Point(174, 358);
             this.buttonSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Size = new System.Drawing.Size(86, 42);
@@ -176,7 +176,7 @@
             this.buttonAdd.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonAdd.Font = new System.Drawing.Font("Cambria", 12F);
-            this.buttonAdd.Location = new System.Drawing.Point(44, 254);
+            this.buttonAdd.Location = new System.Drawing.Point(40, 292);
             this.buttonAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(87, 42);
@@ -212,9 +212,9 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.buttonAdd);
             this.groupBox1.Controls.Add(this.txbPrice);
-            this.groupBox1.Location = new System.Drawing.Point(11, 92);
+            this.groupBox1.Location = new System.Drawing.Point(35, 92);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(309, 381);
+            this.groupBox1.Size = new System.Drawing.Size(309, 427);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Dịch Vụ";
@@ -231,8 +231,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridViewService);
             this.Name = "frmDichVu";
-            this.Size = new System.Drawing.Size(847, 539);
+            this.Size = new System.Drawing.Size(928, 552);
             this.Load += new System.EventHandler(this.frmDichVu_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmDichVu_KeyDown);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmDichVu_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewService)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

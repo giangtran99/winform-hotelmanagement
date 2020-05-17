@@ -30,6 +30,7 @@
         {
             this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.panel = new System.Windows.Forms.Panel();
+            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.celeVatDung = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -46,12 +47,11 @@
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
-            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.fluentDesignFormContainer1.SuspendLayout();
             this.panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // fluentDesignFormContainer1
@@ -64,6 +64,7 @@
             this.fluentDesignFormContainer1.Size = new System.Drawing.Size(985, 560);
             this.fluentDesignFormContainer1.TabIndex = 0;
             this.fluentDesignFormContainer1.Click += new System.EventHandler(this.fluentDesignFormContainer1_Click);
+            this.fluentDesignFormContainer1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.fluentDesignFormContainer1_KeyUp);
             // 
             // panel
             // 
@@ -72,6 +73,15 @@
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(948, 539);
             this.panel.TabIndex = 0;
+            // 
+            // pictureEdit1
+            // 
+            this.pictureEdit1.EditValue = global::QuanLyKhachSan.Properties.Resources.Hotel_banner;
+            this.pictureEdit1.Location = new System.Drawing.Point(0, 3);
+            this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit1.Size = new System.Drawing.Size(932, 552);
+            this.pictureEdit1.TabIndex = 0;
             // 
             // accordionControl1
             // 
@@ -277,15 +287,6 @@
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             // 
-            // pictureEdit1
-            // 
-            this.pictureEdit1.EditValue = global::QuanLyKhachSan.Properties.Resources.Hotel_banner;
-            this.pictureEdit1.Location = new System.Drawing.Point(0, 3);
-            this.pictureEdit1.Name = "pictureEdit1";
-            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Size = new System.Drawing.Size(932, 521);
-            this.pictureEdit1.TabIndex = 0;
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -305,9 +306,9 @@
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.fluentDesignFormContainer1.ResumeLayout(false);
             this.panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

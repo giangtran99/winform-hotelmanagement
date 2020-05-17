@@ -55,7 +55,7 @@
             this.dgvVatDung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVatDung.Location = new System.Drawing.Point(396, 82);
             this.dgvVatDung.Name = "dgvVatDung";
-            this.dgvVatDung.Size = new System.Drawing.Size(564, 414);
+            this.dgvVatDung.Size = new System.Drawing.Size(512, 434);
             this.dgvVatDung.TabIndex = 0;
             this.dgvVatDung.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -160,7 +160,7 @@
             this.btnThem.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.btnThem.Appearance.Options.UseBackColor = true;
             this.btnThem.Appearance.Options.UseFont = true;
-            this.btnThem.Location = new System.Drawing.Point(6, 342);
+            this.btnThem.Location = new System.Drawing.Point(72, 292);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(82, 41);
             this.btnThem.TabIndex = 11;
@@ -173,7 +173,7 @@
             this.btnTimKiem.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.btnTimKiem.Appearance.Options.UseBackColor = true;
             this.btnTimKiem.Appearance.Options.UseFont = true;
-            this.btnTimKiem.Location = new System.Drawing.Point(94, 342);
+            this.btnTimKiem.Location = new System.Drawing.Point(202, 292);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(80, 41);
             this.btnTimKiem.TabIndex = 12;
@@ -186,9 +186,9 @@
             this.btnXoa.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.btnXoa.Appearance.Options.UseBackColor = true;
             this.btnXoa.Appearance.Options.UseFont = true;
-            this.btnXoa.Location = new System.Drawing.Point(268, 342);
+            this.btnXoa.Location = new System.Drawing.Point(202, 363);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(74, 41);
+            this.btnXoa.Size = new System.Drawing.Size(80, 41);
             this.btnXoa.TabIndex = 13;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
@@ -199,7 +199,7 @@
             this.btnLuu.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.btnLuu.Appearance.Options.UseBackColor = true;
             this.btnLuu.Appearance.Options.UseFont = true;
-            this.btnLuu.Location = new System.Drawing.Point(180, 342);
+            this.btnLuu.Location = new System.Drawing.Point(72, 363);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(82, 41);
             this.btnLuu.TabIndex = 14;
@@ -236,7 +236,7 @@
             this.groupBox1.Controls.Add(this.tbGia);
             this.groupBox1.Location = new System.Drawing.Point(21, 82);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(353, 414);
+            this.groupBox1.Size = new System.Drawing.Size(353, 434);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Vật Dụng";
@@ -253,7 +253,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dgvVatDung);
             this.Name = "frmVatDung";
-            this.Size = new System.Drawing.Size(994, 532);
+            this.Size = new System.Drawing.Size(928, 552);
             this.Load += new System.EventHandler(this.frmVatDung_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVatDung)).EndInit();
             this.groupBox1.ResumeLayout(false);

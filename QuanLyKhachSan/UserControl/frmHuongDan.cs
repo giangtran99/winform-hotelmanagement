@@ -17,5 +17,10 @@ namespace QuanLyKhachSan.UserControl
         {
             InitializeComponent();
         }
+
+        private void frmHuongDan_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using QuanLyKhachSan.DAO;
 using System.Data.SqlClient;
+using QuanLyKhachSan.Form;
 
 namespace QuanLyKhachSan
 {
@@ -18,7 +19,7 @@ namespace QuanLyKhachSan
         DataAccessContext db = new DataAccessContext();
         public frmDangNhap()
         {
-            
+           
             InitializeComponent();
         }
 
@@ -31,6 +32,7 @@ namespace QuanLyKhachSan
 
         private void checkButton1_CheckedChanged(object sender, EventArgs e)
         {
+
 
             SqlCommand cmd = new SqlCommand("select COUNT(*) from NhanVien where TaiKhoan = @TaiKhoan and MatKhau = @MatKhau");
             cmd.Parameters.Add("@TaiKhoan", txtTaiKhoan.Text);
@@ -50,6 +52,11 @@ namespace QuanLyKhachSan
         private void txtMatKhau_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void frmDangNhap_KeyDown(object sender, KeyEventArgs e)
+        {
+       
         }
     }
 }

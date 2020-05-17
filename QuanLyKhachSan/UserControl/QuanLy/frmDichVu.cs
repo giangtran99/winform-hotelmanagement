@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using QuanLyKhachSan.DAO;
 using System.Data.SqlClient;
+using QuanLyKhachSan.Form;
 
 namespace QuanLyKhachSan.UserControl.QuanLy
 {
@@ -22,17 +23,22 @@ namespace QuanLyKhachSan.UserControl.QuanLy
 
         public frmDichVu()
         {
+               
             InitializeComponent();
         }
-
+     
         private void frmDichVu_Load(object sender, EventArgs e)
         {
+            
+          
+
             MessageBox.Show("Vui lòng gõ tiếng việt không dấu. Xin cảm ơn!!!", "Thông báo.");
             //Lấy danh sách thông tin dịch vụ vào bảng bên cạnh
             SqlDataAdapter da = new SqlDataAdapter("select top 1000 MaDichVu, TENDV, GiaDichVu from DICHVU", DataAccessContext.connection);
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridViewService.DataSource = dt;
+
         }
 
         private void dataGridViewService_Click(object sender, EventArgs e)
@@ -83,6 +89,17 @@ namespace QuanLyKhachSan.UserControl.QuanLy
             txbName.Clear();
             txbPrice.Clear();
             dtService.Clear();
+        }
+
+        private void frmDichVu_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+       
+        private void frmDichVu_KeyDown(object sender, KeyEventArgs e)
+        {
+            
+          
         }
 
         private void buttonDelete_Click(object sender, EventArgs e)
