@@ -64,6 +64,11 @@ namespace QuanLyKhachSan.UserControl
                         if (MessageBox.Show("Bạn có chắc chắm muốn xóa không?", "Đang xóa...", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                         {
                             int rowIndex = e.RowIndex;
+                            DataAccessContext dt = new DataAccessContext();
+                            SqlCommand cmd = new SqlCommand("Update HOADON SET MaKH = null WHERE MaKH = @MaKH");
+                            cmd.Parameters.Add("@MaKH", dGVTimKiem.Rows[rowIndex].Cells["Mã khách hàng"].Value);
+                            dt.executeSelectQuery(cmd);
+
                             dGVTimKiem.Rows.RemoveAt(rowIndex);
                             dataset.Tables["KHACHHANG"].Rows[rowIndex].Delete();
                             sqlAdapter.Update(dataset, "KHACHHANG");
