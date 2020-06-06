@@ -174,8 +174,8 @@ namespace QuanLyKhachSan.UserControl.QuanLy
         private void btnXoa_Click(object sender, EventArgs e)
         {
             int selectIndex = dgvSDDichVu.SelectedRows[0].Index;
-            int MaDV = (int)dgvSDDichVu[0, selectIndex].Value;
-            int MaHD = (int)dgvSDDichVu[1, selectIndex].Value;
+            int MaDV = (int)dgvSDDichVu["MaDichVu", selectIndex].Value;
+            int MaHD = (int)dgvSDDichVu["MaHoaDon", selectIndex].Value;
 
             XoatheoMaNV(MaHD, MaDV);
             dgvSDDichVu.Rows.RemoveAt(dgvSDDichVu.SelectedRows[0].Index);
